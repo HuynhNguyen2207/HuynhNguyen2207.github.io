@@ -65,7 +65,7 @@ img {
 
 .main-nav {
     text-align: center;
-    border-bottom: 1px black solid;
+    border-bottom: 1px grey solid;
     padding: 12px;
 }
 
@@ -73,8 +73,15 @@ img {
     margin-bottom: 12px;
 }
 
+.nav-item a {
+    text-transform: uppercase;
+}
+
 .main-nav-toggle {
     display: block;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
     background: white;
     border: none;
     margin: 0 auto;
