@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="2962 -1976 168 168">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 6px;
+      }
+
+      .cls-3, .cls-5, .cls-6 {
+        stroke-linecap: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-1" width="168" height="168" transform="translate(476 473)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_5" data-name="Mask Group 5" class="cls-2" transform="translate(2486 -2449)">
+    <g id="icon-packaging" transform="translate(476 473)">
+      <path id="Path_17" data-name="Path 17" class="cls-3" d="M102,133v32H59V133"/>
+      <path id="Path_18" data-name="Path 18" class="cls-3" d="M59,96V23h43V91"/>
+      <path id="Path_19" data-name="Path 19" class="cls-3" d="M102,105V23h43V165H102V135"/>
+      <path id="Path_20" data-name="Path 20" class="cls-4" d="M165,3,145,23H59L79,3Z"/>
+      <path id="Path_21" data-name="Path 21" class="cls-4" d="M165,3V145l-20,20V23Z"/>
+      <g id="Group_20" data-name="Group 20">
+        <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-5" cx="5" cy="5" r="5" transform="translate(119 48)"/>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="2" cy="2" r="2" transform="translate(122 39)"/>
+        <circle id="Ellipse_4" data-name="Ellipse 4" cx="2" cy="2" r="2" transform="translate(130.485 42.515)"/>
+        <circle id="Ellipse_5" data-name="Ellipse 5" cx="2" cy="2" r="2" transform="translate(134 51)"/>
+        <circle id="Ellipse_6" data-name="Ellipse 6" cx="2" cy="2" r="2" transform="translate(130.485 59.485)"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="2" cy="2" r="2" transform="translate(122 63)"/>
+        <circle id="Ellipse_8" data-name="Ellipse 8" cx="2" cy="2" r="2" transform="translate(113.515 59.485)"/>
+        <circle id="Ellipse_9" data-name="Ellipse 9" cx="2" cy="2" r="2" transform="translate(110 51)"/>
+        <circle id="Ellipse_10" data-name="Ellipse 10" cx="2" cy="2" r="2" transform="translate(113.515 42.515)"/>
+      </g>
+      <g id="Group_21" data-name="Group 21">
+        <path id="Path_22" data-name="Path 22" class="cls-6" d="M39.9,116.43,3,153.33V92.53H30a14,14,0,0,1,9.9,23.9Z"/>
+        <path id="Path_23" data-name="Path 23" class="cls-6" d="M30,120.53h96l-82-14Z"/>
+        <circle id="Ellipse_11" data-name="Ellipse 11" cx="4" cy="4" r="4" transform="translate(25 100.53)"/>
+      </g>
+    </g>
+  </g>
+</svg>

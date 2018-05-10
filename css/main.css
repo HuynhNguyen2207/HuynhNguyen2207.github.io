@@ -1,0 +1,140 @@
+/*
+----------------------------------
+------- Embed Font----------------
+----------------------------------
+*/
+
+@import url("https://use.typekit.net/ghw3mij.css");
+/*
+----------------------------------
+------- Universal Selector -------
+----------------------------------
+*/
+
+#{
+ box-sizing: border-box;
+}
+
+/*
+----------------------------------
+----------- Base Style -----------
+----------------------------------
+*/
+
+body {
+    font-family: 'futura-pt', helvetica, arial, sans-serif;
+    font-size: 20px;
+}
+
+p {}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+----------------------------------
+------- Header -------------------
+----------------------------------
+*/
+
+.main-header {
+    padding-top: 52px;
+}
+
+.header-logo {
+    width: 128px;
+    margin: 0 auto;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.nav-item {
+    margin-bottom: 12px;
+}
+
+/*
+----------------------------------
+------- Footer -------------------
+----------------------------------
+*/
+
+.main-footer {
+    background: black;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 12px;
+}
+
+/* Footer Logo */
+
+.footer-logo {
+    width: 128px;
+    margin: 0 auto;
+}
+
+/* Media Icons */
+
+.social-icn {
+    margin-top: 35px;
+}
+
+.social-icn li {
+    display: inline-block;
+}
+
+.social-icn img {
+    width: 48px;
+    margin: 0 6px;
+}
+
+/* Secondary Navigation */
+
+.secondary-nav a {
+    color: white;
+}
+
+/*
+----------------------------------
+------- Our Work -----------------
+----------------------------------
+*/
+
+.gallery-item {
+    width: 50%;
+}
+
+.col-l {
+    float: left;
+}
+
+.col-r {
+    float: right;
+}
+
+.gallery-item p {
+    text-align: center;
+}
