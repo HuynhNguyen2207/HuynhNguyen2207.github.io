@@ -44,13 +44,8 @@ img {
 
 .container {
     width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-}
-
-.clear-fix:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /*
@@ -60,7 +55,7 @@ img {
 */
 
 .main-header {
-    padding-top: 52px;
+    padding-top: 28px;
 }
 
 .header-logo {
@@ -70,10 +65,20 @@ img {
 
 .main-nav {
     text-align: center;
+    border-bottom: 1px black solid;
+    padding: 12px;
 }
 
 .nav-item {
     margin-bottom: 12px;
+}
+
+.main-nav-toggle {
+    display: block;
+    background: white;
+    border: none;
+    margin: 0 auto;
+    padding: 12px;
 }
 
 /*
@@ -122,19 +127,3 @@ img {
 ------- Our Work -----------------
 ----------------------------------
 */
-
-.gallery-item {
-    width: 50%;
-}
-
-.col-l {
-    float: left;
-}
-
-.col-r {
-    float: right;
-}
-
-.gallery-item p {
-    text-align: center;
-}
