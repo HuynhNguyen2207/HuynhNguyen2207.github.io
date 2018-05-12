@@ -1,32 +1,39 @@
 /*
-----------------------------------
-------- Embed Font----------------
-----------------------------------
+-------------------------------------
+------- Type Kit --------------------
+-------------------------------------
 */
 
 @import url("https://use.typekit.net/ghw3mij.css");
+
 /*
-----------------------------------
-------- Universal Selector -------
-----------------------------------
+-------------------------------------
+------- Universal Selector ----------
+-------------------------------------
 */
 
-#{
- box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 /*
-----------------------------------
------------ Base Style -----------
-----------------------------------
+-------------------------------------
+------- Base Style ------------------
+-------------------------------------
 */
 
 body {
-    font-family: 'futura-pt', helvetica, arial, sans-serif;
+    font-family: "futura-pt","Helvetica","Arial",sans-serif;
+    color: black;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-p {}
+p {
+
+}
 
 ul {
     list-style-type: none;
@@ -38,99 +45,127 @@ a {
     color: black;
 }
 
-img {
-    display: block;
+main {
+    flex: 1;
 }
 
 .container {
     width: 90%;
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
+    border: 1px solid red;
 }
 
 /*
-----------------------------------
-------- Header -------------------
-----------------------------------
+-------------------------------------
+------- Main Header -----------------
+-------------------------------------
 */
 
-.main-header {
-    padding-top: 28px;
+.main-nav{
+    display: flex;
+    height: 150px;
+    align-items: center;
 }
 
 .header-logo {
     width: 128px;
-    margin: 0 auto;
+    margin-right: auto;
 }
 
-.main-nav {
-    text-align: center;
-    border-bottom: 1px grey solid;
-    padding: 12px;
+.main-nav ul {
+    display: flex;
+    margin-left: auto;
 }
 
-.nav-item {
-    margin-bottom: 12px;
+.main-nav li a {
+    padding: 7px;
+    margin: 0 17px;
 }
 
-.nav-item a {
-    text-transform: uppercase;
+.main-nav li a:hover {
+    border-bottom: 3px solid black;
 }
 
-.main-nav-toggle {
-    display: block;
-    color: grey;
-    font-size: 15px;
-    font-weight: bold;
-    background: white;
-    border: none;
-    margin: 0 auto;
-    padding: 12px;
+.main-nav li:last-child a{
+    border: 3px solid black;
+    margin-right: 0;
 }
 
-/*
-----------------------------------
-------- Footer -------------------
-----------------------------------
-*/
-
-.main-footer {
+.main-nav li:last-child a:hover {
     background: black;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 12px;
-}
-
-/* Footer Logo */
-
-.footer-logo {
-    width: 128px;
-    margin: 0 auto;
-}
-
-/* Media Icons */
-
-.social-icn {
-    margin-top: 35px;
-}
-
-.social-icn li {
-    display: inline-block;
-}
-
-.social-icn img {
-    width: 48px;
-    margin: 0 6px;
-}
-
-/* Secondary Navigation */
-
-.secondary-nav a {
     color: white;
 }
 
 /*
-----------------------------------
-------- Our Work -----------------
-----------------------------------
+-------------------------------------
+------- Main Footer -----------------
+-------------------------------------
 */
+
+.main-footer {
+    background: black;
+    height: 150px;
+    align-self: ;
+}
+
+.main-footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 128px;
+    margin-right: auto;
+}
+
+.social-icn ul {
+    display: flex;
+}
+
+.social-icn li {
+    margin: 25px;
+}
+
+.social-icn img {
+    width: 48px;
+}
+
+.secondary-nav {
+    margin-left: auto;
+}
+
+.secondary-nav ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.secondary-nav a {
+    padding: 7px;
+    margin: 0 17px;
+    color: white;
+}
+
+.secondary-nav a:last-child {
+    margin-right: 0;
+}
+
+/*
+-------------------------------------
+------- Index Page ------------------
+-------------------------------------
+*/
+
+#main-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-item {
+    width: 30%;
+}
+
+.gallery-item p {
+    text-align: center;
+}
