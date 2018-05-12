@@ -63,12 +63,13 @@ main {
 
 .main-nav{
     display: flex;
-    height: 150px;
+    padding-top: 40px;
     align-items: center;
 }
 
-.header-logo {
+.logo {
     width: 128px;
+    margin-left: 10px;
     margin-right: auto;
 }
 
@@ -88,7 +89,7 @@ main {
 
 .main-nav li:last-child a{
     border: 3px solid black;
-    margin-right: 0;
+    margin-right: 10px;
 }
 
 .main-nav li:last-child a:hover {
@@ -111,11 +112,6 @@ main {
 .main-footer .container {
     display: flex;
     align-items: center;
-}
-
-.footer-logo {
-    width: 128px;
-    margin-right: auto;
 }
 
 .social-icn ul {
@@ -164,6 +160,7 @@ main {
 
 .gallery-item {
     width: 30%;
+    padding: 10px;
 }
 
 .gallery-item:hover {
