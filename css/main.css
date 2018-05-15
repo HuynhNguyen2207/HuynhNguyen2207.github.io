@@ -1,172 +1,195 @@
 /*
--------------------------------------
-------- Type Kit --------------------
--------------------------------------
+==========================================
+======= Typekit Embed ====================
+======= Normalize CSS ====================
+==========================================
 */
-
 @import url("https://use.typekit.net/ghw3mij.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css");
 
 /*
--------------------------------------
-------- Universal Selector ----------
--------------------------------------
+==========================================
+======= Base Style =======================
+==========================================
 */
 
 * {
     box-sizing: border-box;
 }
 
-/*
--------------------------------------
-------- Base Style ------------------
--------------------------------------
-*/
+html, body {
+    height: 100%;
+}
 
 body {
-    font-family: "futura-pt","Helvetica","Arial",sans-serif;
-    color: black;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    color: black;
+    font-family: 'futura-pt', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
 }
 
-p {
-
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
 }
 
 a {
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 
-main {
-    flex: 1;
-}
+/*
+==========================================
+======= Layout Style =====================
+==========================================
+*/
 
 .container {
     width: 90%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-}
-
-/*
--------------------------------------
-------- Main Header -----------------
--------------------------------------
-*/
-
-.main-nav{
     display: flex;
-    padding-top: 40px;
-    align-items: center;
+    flex-direction: column;
 }
 
-.logo {
-    width: 128px;
-    margin-left: 10px;
-    margin-right: auto;
-}
-
-.main-nav ul {
-    display: flex;
-    margin-left: auto;
-}
-
-.main-nav li a {
-    padding: 7px;
-    margin: 0 17px;
-}
-
-.main-nav li a:hover {
-    border-bottom: 3px solid black;
-}
-
-.main-nav li:last-child a{
-    border: 3px solid black;
-    margin-right: 10px;
-}
-
-.main-nav li:last-child a:hover {
-    background: black;
-    color: white;
-}
-
-/*
--------------------------------------
-------- Main Footer -----------------
--------------------------------------
-*/
-
-.main-footer {
-    background: black;
-    height: 150px;
-    align-self: ;
-}
-
-.main-footer .container {
-    display: flex;
-    align-items: center;
-}
-
-.social-icn ul {
-    display: flex;
-}
-
-.social-icn li {
-    margin: 25px;
-}
-
-.social-icn img {
-    width: 48px;
-}
-
-.secondary-nav {
-    margin-left: auto;
-}
-
-.secondary-nav ul {
-    display: flex;
-    margin-left: auto;
-}
-
-.secondary-nav a {
-    padding: 7px;
-    margin: 0 17px;
-    color: white;
-}
-
-.secondary-nav a:last-child {
-    margin-right: 0;
-}
-
-/*
--------------------------------------
-------- Index Page ------------------
--------------------------------------
-*/
-
-#main-gallery {
+.header-main .container,
+.footer-main .container,
+.content-main .container,
+.gallery-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 0;
+}
+
+.header-main .container div {
+    display: flex;
+    align-items: center;
+}
+
+.content-main {
+    flex: 1 0 auto;
+}
+
+.footer-main {
+    background-color: black;
+    flex-shrink: 0;
+}
+
+.footer-main .container {
+    align-items: center;
+}
+
+.header-main .container {
+    flex-wrap: nowrap;
+}
+
+/*
+==========================================
+======= Header Style =====================
+======= Footer Style =====================
+==========================================
+*/
+
+.logo-header,
+.logo-footer {
+    width: 8rem;
+    margin: 2.5rem 0;
+}
+
+.logo-header {
+    margin-right: auto;
+    margin-left: 0.5rem;
+}
+
+.toggle-btn {
+    margin-left: auto;
+    margin-right: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.nav-social {
+    margin-bottom: 2.5rem;
+}
+
+.nav-social img {
+    width: 3rem;
+    margin: 0 0.75rem;
+}
+
+.nav-header a,
+.nav-footer a {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.nav-header a {
+    color: black;
+}
+
+.nav-footer a:last-child {
+    margin-bottom: 2.5rem;
+}
+
+/*
+==========================================
+======= Navigation Style =================
+==========================================
+*/
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.overlay a {
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 1.25rem;
+    right: 2.8125rem;
+    font-size: 3.75rem;
+}
+
+/*
+==========================================
+======= Homepage Style ===================
+==========================================
+*/
+.gallery-main {
+    padding-bottom: 2rem;
 }
 
 .gallery-item {
-    width: 30%;
-    padding: 10px;
-}
-
-.gallery-item:hover {
-    opacity: .8;
-}
-
-.gallery-item p {
     text-align: center;
+    flex: 1 1 45%;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.gallery-item img:hover {
+    opacity: .8;
 }
