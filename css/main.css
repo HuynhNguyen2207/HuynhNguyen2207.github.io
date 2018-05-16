@@ -17,22 +17,22 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     color: black;
     font-family: 'futura-pt', Helvetica, Arial, sans-serif;
-    font-size: 1.25rem;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    width: 100%;
+    font-size: 1.8rem;
     text-align: center;
-    font-weight: lighter;
 }
 
 a {
@@ -51,128 +51,72 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
-}
-
-.header-main .container,
-.footer-main .container,
-.content-main .container,
-.gallery-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.header-main .container div {
-    display: flex;
-    align-items: center;
-}
-
-.content-main {
-    flex: 1 0 auto;
 }
 
 .footer-main {
     background-color: black;
-    flex-shrink: 0;
-}
-
-.footer-main .container {
-    align-items: center;
-}
-
-.header-main .container {
-    flex-wrap: nowrap;
+    margin-top: auto;
 }
 
 /*
 ==========================================
-======= Header Style =====================
-======= Footer Style =====================
+======= Header, Footer Style =============
 ==========================================
 */
 
+.header-main .container,
+.footer-main .container {
+    flex-direction: column;
+}
+
 .logo-header,
 .logo-footer {
-    width: 8rem;
-    margin: 2.5rem 0;
+    width: 128px;
+    margin: 2.5rem auto;
 }
 
 .logo-header {
-    margin-right: auto;
-    margin-left: 0.5rem;
+    margin-bottom: 0;
 }
 
-.toggle-btn {
-    margin-left: auto;
-    margin-right: 0.5rem;
-    font-size: 2.5rem;
+.btn-menu {
+    margin: 2.5rem 0;
+    border: none;
+    background-color: rgba(225, 225, 225, 0);
 }
 
 .nav-social {
-    margin-bottom: 2.5rem;
+    margin: 0 auto;
 }
 
 .nav-social img {
-    width: 3rem;
-    margin: 0 0.75rem;
+    display: inline-block;
+    width:48px;
+    margin: 0 1rem;
+}
+
+.nav-header,
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-header {
+    margin-top: 2.5rem;
+}
+
+.nav-footer {
+    margin: 2.5rem 0;
 }
 
 .nav-header a,
 .nav-footer a {
-    display: block;
+    margin: 0.75rem 0;
     text-align: center;
-    margin-bottom: 0.75rem;
+}
+
+.nav-footer a {
     color: white;
-}
-
-.nav-header a {
-    color: black;
-}
-
-.nav-footer a:last-child {
-    margin-bottom: 2.5rem;
-}
-
-/*
-==========================================
-======= Navigation Style =================
-==========================================
-*/
-
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.overlay a {
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: black;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: 1.25rem;
-    right: 2.8125rem;
-    font-size: 3.75rem;
 }
 
 /*
@@ -180,16 +124,142 @@ a {
 ======= Homepage Style ===================
 ==========================================
 */
-.gallery-main {
-    padding-bottom: 2rem;
+
+
+#gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery-item {
+    flex: 1 0 50%;
+    padding: 0.5rem;
+    padding-top: 0;
     text-align: center;
-    flex: 1 1 45%;
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    transition: all 0.2s;
 }
 
-.gallery-item img:hover {
-    opacity: .8;
+.gallery-item:hover {
+    opacity: 0.8;
 }
+
+/*
+==========================================
+======= About Page Style =================
+==========================================
+*/
+
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-icon {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-item {
+    width: 168px;
+    margin: 4rem auto;
+}
+
+.about-item:first-child {
+    margin-top: 0;
+}
+
+.about-item p {
+    margin-top: 1.25rem;
+    text-align: center;
+}
+
+/*
+==========================================
+======= Contact Page Style  ==============
+==========================================
+*/
+
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea{
+    display: block;
+}
+
+label {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem auto;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+/*
+==========================================
+======= Blog Page Style  =================
+==========================================
+*/
+
+#blog {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.blog-item {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.blog-header {
+    text-align: center;
+}
+
+.blog-header p {
+    font-size: 0.8rem;
+    color: #7E7E7E;
+    margin-top: -0.5rem;
+}
+
+/*
+==========================================
+======= Project Page Style  ==============
+==========================================
+*/
+
+#project {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+/*
+==========================================
+======= Media Query ======================
+==========================================
+*/

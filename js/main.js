@@ -1,9 +1,10 @@
-/* Open */
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-}
+$(document).ready(function() {
 
-/* Close */
-function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-}
+    if ($(window).width() < 426) {
+
+        $(".nav-header").hide();
+        $(".btn-menu").click(function() {
+            $(".nav-header").slideToggle();
+        });
+    }
+})
