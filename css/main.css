@@ -25,7 +25,7 @@ body {
 body {
     color: black;
     font-family: 'futura-pt', Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
 }
@@ -80,7 +80,8 @@ a {
 }
 
 .btn-menu {
-    margin: 2.5rem 0;
+    color: #7E7E7E;
+    margin: 1rem 0;
     border: none;
     background-color: rgba(225, 225, 225, 0);
 }
@@ -130,15 +131,16 @@ a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 .gallery-item {
     flex: 1 0 50%;
-    padding: 0.5rem;
-    padding-top: 0;
+    padding: 0.1rem 0.2rem;
     text-align: center;
     transition: all 0.2s;
 }
+
 
 .gallery-item:hover {
     opacity: 0.8;
@@ -195,13 +197,13 @@ a {
 
 label {
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 input,
 textarea {
     width: 100%;
+    margin-bottom: 1rem;
     padding: 1rem;
     border: 2px solid black;
     border-radius: 5px;
@@ -260,6 +262,142 @@ textarea {
 
 /*
 ==========================================
+======= Animation ========================
+==========================================
+*/
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+/*
+==========================================
 ======= Media Query ======================
 ==========================================
 */
+
+@media (min-width: 430px) {
+
+    .header-main,
+    .footer-main {
+        padding: 2rem 0;
+    }
+
+    .header-main .container,
+    .footer-main .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-header,
+    .nav-footer {
+        flex-direction: row;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .logo-header,
+    .logo-footer {
+        margin-right: auto;
+        margin-left: 1rem;
+    }
+
+    .nav-header,
+    .nav-footer {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
+
+    .nav-social {
+        margin-left: auto;
+    }
+
+    .nav-header a,
+    .nav-footer a {
+        margin-left: 2rem;
+    }
+
+    .nav-header a {
+        padding: 1rem;
+    }
+
+    .nav-header a:hover {
+        border-bottom: 1px solid black;
+    }
+
+    .nav-header a:last-child {
+        border: 1px solid black;
+    }
+
+    .nav-header a:last-child:hover {
+        background-color: black;
+        color: white;
+    }
+
+    /* Gallery -------------------------- */
+
+    .gallery-item {
+        padding: 1rem 1rem;
+    }
+
+    /* About --------------------------- */
+
+    .about-icon {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 2rem auto;
+    }
+
+    .about-item {
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-description {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    /* Blog --------------------------- */
+
+    .blog-main-body p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Contact ------------------------- */
+
+    .contact-form {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-form label {
+        text-align: left;
+    }
+
+    .btn-submit {
+        width: 50%;
+    }
+
+    /* Contact ------------------------- */
+
+    .project-item p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
