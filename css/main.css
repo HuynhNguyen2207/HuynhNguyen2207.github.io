@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/ghw3mij.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -302,7 +302,7 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: "futura-pt", "Helvetica", Arial, sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 a {
   text-decoration: none; }
@@ -430,6 +430,9 @@ body {
     .footer-main p a:hover {
       text-decoration: underline; }
 
+#myNav {
+  transition: all 0.5s; }
+
 .nav-overlay {
   display: flex;
   flex-direction: column;
@@ -485,7 +488,7 @@ body {
 
 .btn-open-nav {
   color: #444035;
-  font-size: 1.875rem;
+  font-size: 4.125rem;
   display: block;
   text-align: center; }
   @media (min-width: 376px) {
