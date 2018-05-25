@@ -1,10 +1,11 @@
-$(document).ready(function() {
+if (window.innerWidth <= 375) {
+  document.getElementById("myNav").style.display = "none";
 
-    if ($(window).width() < 430) {
+  function openNav() {
+      document.getElementById("myNav").style.display = "flex";
+  }
 
-        $(".nav-header").hide();
-        $(".btn-menu").click(function() {
-            $(".nav-header").slideToggle();
-        });
-    }
-})
+  function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+  }
+}
