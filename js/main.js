@@ -1,4 +1,5 @@
-if (window.innerWidth <= 375) {
+
+if (window.innerWidth < 415) {
   document.getElementById("myNav").style.display = "none";
 
   function openNav() {
@@ -9,3 +10,5 @@ if (window.innerWidth <= 375) {
       document.getElementById("myNav").style.display = "none";
   }
 }
+
+document.getElementById("myNav").style.display = "none";
