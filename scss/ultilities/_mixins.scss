@@ -1,0 +1,13 @@
+@mixin centered($w) {
+  width: $w;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-items: $align;
+}

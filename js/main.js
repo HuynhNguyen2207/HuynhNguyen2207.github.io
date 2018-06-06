@@ -1,14 +1,10 @@
+const openNavBtn = document.querySelector('span.btn-open-nav');
+const navOverlay = document.querySelector('nav.nav-overlay');
 
-if (window.innerWidth < 415) {
-  document.getElementById("myNav").style.display = "none";
+openNavBtn.addEventListener('click', () => {
+  navOverlay.style.display = 'flex';
+});
 
-  function openNav() {
-      document.getElementById("myNav").style.display = "flex";
-  }
-
-  function closeNav() {
-      document.getElementById("myNav").style.display = "none";
-  }
-}
-
-document.getElementById("myNav").style.display = "none";
+navOverlay.addEventListener('click', () => {
+  navOverlay.style.display = 'none';
+});

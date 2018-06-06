@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'socialicious';
+    src: url(fonts/socialicious.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $stack-primary;
+  font-weight: $font-weight-light;
+  line-height: 1.5;
+  color: $color-text-base;
+}
+
+a {
+  color: $color-text-base;
+  text-decoration: none;
+}
