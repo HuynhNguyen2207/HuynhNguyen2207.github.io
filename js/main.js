@@ -1,10 +1,10 @@
-const openNavBtn = document.querySelector('span.btn-open-nav');
-const navOverlay = document.querySelector('nav.nav-overlay');
+$(document).ready(function() {
 
-openNavBtn.addEventListener('click', () => {
-  navOverlay.style.display = 'flex';
-});
+    if ($(window).width() < 430) {
 
-navOverlay.addEventListener('click', () => {
-  navOverlay.style.display = 'none';
-});
+        $(".nav-header").hide();
+        $(".btn-menu").click(function() {
+            $(".nav-header").slideToggle();
+        });
+    }
+})
