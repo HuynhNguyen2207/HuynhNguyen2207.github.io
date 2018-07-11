@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The Code Review | Sign up form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </head>
+    <body>
+
+        <header class="main-header">
+
+            <h3>The code review</h3>
+
+        </header>
+
+        <main class="main-body">
+
+            <div class="container">
+
+                <header class="page-header">
+                    <h3>Signup for our newsletter</h3>
+                    <p>Get the lastest news on how your code is doing right in your inbox.</p>
+                </header>
+
+                <hr>
+
+                <form class="news-ltr-form" action="#" method="post">
+
+                    <fieldset class="contact_info">
+
+                        <legend>Contact Information</legend>
+
+                        <div class="container">
+
+                            <label  for="name">Full name</label>
+                            <input type="text" id="name" name="user_name" placeholder="required"  required>
+
+                            <label for="email">E-mail Address</label>
+                            <input type="email" id="email" name="user_email" placeholder="required" required>
+
+                            <label for="tel">Phone Number</label>
+                            <input type="tel" id="tel" name="user_tel" placeholder="optional">
+
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="user_address" placeholder="optional">
+
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="user_city" placeholder="optional">
+
+                            <label for="state">State</label>
+                            <select id="state" name="user_state">
+                                <option  disabled value="" selected hidden>Choose State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                            </select>
+
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="user_zip">
+
+                        </div>
+
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset class="news_ltr">
+
+                        <legend>Newsletter</legend>
+
+                        <div class="container">
+
+
+                            <label>Select the newsletter you would like to recieve</label><br>
+
+                            <input type="checkbox" id="html" name="ltr_subject" value="html" checked>
+                            <label for="html">HTML News</label><br>
+
+                            <input type="checkbox" id="css" name="ltr_subject" value="css">
+                            <label for="css">CSS News</label><br>
+
+                            <input type="checkbox" id="javascript" name="ltr_subject" value="javascriptL">
+                            <label for="javascript">Javascript News</label>
+
+                            <label>Newsletter Format</label><br>
+
+                            <input type="radio" id="html_ltr" name="ltr_format" value="html_ltr" checked>
+                            <label for="html_ltr">HTML</label><br>
+
+                            <input type="radio" id="plain_txt" name="ltr_format" value="plain_txt">
+                            <label for="plain_txt">Plain Text</label><br>
+
+                            <label for="topic">Other topics you would like to hear about</label>
+
+                            <textarea id="topic" name="topic"></textarea>
+
+                        </div>
+
+                    </fieldset>
+
+                    <button type="submit" name="submit_btn">Sign Up</button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <footer class="main-footer">
+            <p>Copyright The Code Review</p>
+        </footer>
+
+    </body>
+</html>

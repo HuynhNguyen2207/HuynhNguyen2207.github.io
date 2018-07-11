@@ -1,0 +1,208 @@
+
+/* Google font */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+/*
+font-family: 'Merriweather', serif;
+ */
+
+/* Colors
+    Oxford Blue: #2D3945;
+    White: #FFFFFF;
+    Fountain Blu: #4EBBB5;
+    Porcelain: #EFF0F1;
+    Gray Chateau: #A4A9AE;
+*/
+
+/* ---------- Base Style ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #A4A9AE;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-header {
+    text-transform: uppercase;
+    text-align: center;
+    background: #2D3945;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.page-header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+    border-bottom: 4px solid #2D3945;
+}
+
+.page-header h3 {
+    font-weight: 700;
+    color: #2D3945;
+}
+
+.page-header p {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.main-footer {
+    text-align: center;
+    font-size: .8rem;
+    padding: 30px;
+}
+
+hr {
+    border-top: 2px solid #2D3945;
+}
+
+/* ---------- Form Style ---------- */
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+fieldset .container {
+    width: 100%;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 30px 0;
+    color: #2D3945;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    padding: 15px;
+    width: 100%;
+    background-color: #EFF0F1;
+    color: #2D3945;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 200px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 15px;
+  height: 50px;
+  border-radius: 2px;
+}
+
+input[name="user_zip"] {
+    width: 30%;
+}
+
+.contact_info label {
+    display: block
+}
+
+.news_ltr label {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 20px 0;
+    color: #FFFFFF;
+    background-color: #4EBBB5;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 0;
+  outline: 2px solid #2D3945;
+  background: #FFFFFF;
+  transition: background .5s;
+}
+
+/* ---------- Placeholder Style ---------- */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #A4A9AE;
+  font-size: .8rem;
+  text-align: right;
+  text-decoration: underline;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #A4A9AE;
+  font-size: .8rem;
+  text-align: right;
+  text-decoration: underline;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #A4A9AE;
+  font-size: .8rem;
+  text-align: right;
+  text-decoration: underline;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #A4A9AE;
+  font-size: .8rem;
+  text-align: right;
+  text-decoration: underline;
+}
+
+
+/* ---------- Media Querries ---------- */
+
+@media (min-width: 768px) {
+    .container {
+        width: 70%;
+        max-width: 900px;
+    }
+
+    .contact_info .container > label {
+        width: 25%;
+        display: inline-block;
+    }
+
+    .contact_info .container > input,
+    .contact_info .container > select {
+        width: 75%;
+        display: inline-block;
+        margin-left: -4px;
+    }
+
+    .contact_info .container > input[name="user_zip"] {
+        width: 30%;
+    }
+
+}
