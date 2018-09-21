@@ -1,0 +1,22 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,700');
+
+/* Color Variable */
+$robinEggBlue: #00B9BD;
+$firefly : #123D3D;
+$black: #000;
+$white: #fff;
+
+/* Color Usage */
+$color-primary: $robinEggBlue;
+
+$color-text--dark: $black;
+$color-text--light: $white;
+
+/* Font Usage */
+$font-roboto-sans    : 'Roboto', sans-serif;
+$font-roboto-slab    : 'Roboto Slab', serif;
+
+/* Font Weight */
+$font-weight--light  : 300;
+$font-weight--bold   : 700;

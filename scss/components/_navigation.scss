@@ -1,0 +1,36 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  z-index: 99;
+  background: $white;
+
+  ul {
+    position: static;
+    font-size: px-to-em(26);
+  }
+
+  li {
+    padding: px-to-em(10);
+  }
+
+  ul li a {
+    font-family: $font-roboto-slab;
+    color: $color-text--dark;
+  }
+}
+
+.toggle-active .bar {
+  background: $color-primary;
+}
+
+.overlay ul li:last-of-type {
+  background: $color-primary;
+  padding-left: px-to-em(15);
+  padding-right: px-to-em(15);
+  border-radius: px-to-em(50);
+  a {
+    color: $color-text--light;
+  }
+}

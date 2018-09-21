@@ -1,0 +1,43 @@
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  background-color: $firefly;
+  padding: px-to-em(60) 0;
+}
+
+.img-logo-footer {
+  width: px-to-em(100);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: px-to-em(20);
+}
+
+.nav-social {
+  display: flex;
+  width: px-to-em(120);
+  margin: 0 auto;
+  margin-bottom: px-to-em(20);
+  a {
+    display: inline-block;
+    &:nth-of-type(2) {
+      margin: 0 auto;
+    }
+  }
+  img {
+    width: px-to-em(20);
+  }
+}
+
+.contact-info {
+  color: white;
+  text-align: center;
+  span {
+    font-weight: $font-weight--bold;
+  }
+}
+
+.copy-info {
+  background-color: white;
+  text-align: center;
+  color: #707070;
+}
