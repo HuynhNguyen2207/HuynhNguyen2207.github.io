@@ -354,6 +354,14 @@ header {
   width: 85%;
   margin: 0 auto; }
 
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 1200px; }
+
+  footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; } }
 .nav-bar {
   padding: 1.25em 0;
   background: #fff; }
@@ -379,6 +387,19 @@ header {
   .toggle-button .bar {
     background-color: #00B9BD; }
 
+.nav-desktop {
+  display: none; }
+
+@media (min-width: 768px) {
+  .nav-bar {
+    padding: 0; }
+
+  .nav-mobile {
+    display: none; }
+
+  .nav-desktop {
+    display: block;
+    margin-left: auto; } }
 .content-text {
   text-align: center; }
   .content-text p {
@@ -406,6 +427,82 @@ header {
 .content-img {
   display: none; }
 
+.img-about {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-who.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+.img-work {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-work.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+.img-concept-design {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-concept-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+.img-structure-design {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-structural-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120%; }
+.img-construction-design {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-construction-design.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%; }
+.img-value-engineer {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-value-engineer.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+.img-design-review {
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.2), rgba(73, 211, 213, 0.2)), url("../img/bg/bg-design-review.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+
+@media (min-width: 768px) {
+  main .divider {
+    display: none; }
+
+  main .content-block {
+    display: flex; }
+    main .content-block .content-wrapper {
+      margin: 0 auto;
+      display: flex;
+      max-width: 1200px; }
+    main .content-block .content-text {
+      flex: 1;
+      padding: 3.125em 1.25em; }
+    main .content-block .content-img {
+      display: block;
+      flex: 2;
+      width: 100%; }
+
+  .content-block .left {
+    order: -1; }
+
+  .content-block .right {
+    order: 2; }
+
+  .main-career .content-block .content-text {
+    text-align: left; }
+    .main-career .content-block .content-text p {
+      text-align: left; }
+
+  .main-career .content-block .content-text .wrapper {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #00B9BD; }
+  .main-career .content-block .content-text .button {
+    transition: all .2s;
+    border: 4px solid #128789;
+    margin-left: auto; }
+  .main-career .content-block .content-text .button:hover {
+    background: #fff;
+    color: #000; } }
 footer {
   background-color: #043C3D; }
 
@@ -432,6 +529,9 @@ footer .wrapper {
 footer .contact-info {
   text-align: center;
   color: #fff; }
+  footer .contact-info a {
+    text-decoration: none;
+    color: inherit; }
 footer .copyright-info span {
   display: block;
   padding: 0.625em;
@@ -440,6 +540,20 @@ footer .copyright-info span {
   color: gray;
   background-color: #fff; }
 
+@media (min-width: 768px) {
+  footer .wrapper {
+    padding: 1.25em; }
+
+  .nav-social {
+    width: 20%; }
+
+  .contact-info p {
+    text-align: left; }
+
+  .copyright-info span {
+    font-size: 0.5625em;
+    display: block;
+    padding: 0; } }
 .nav-bar {
   transition: all .5s; }
 
@@ -472,44 +586,69 @@ nav.overlay {
   padding: 0.625em 1.25em;
   border-radius: 100px; }
 
+@media (min-width: 768px) {
+  .nav-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; }
+  .nav-desktop ul li {
+    display: inline-block;
+    margin: 0 1.25em; }
+  .nav-desktop ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    transition: all .2s; }
+
+  .nav-desktop a:hover {
+    border-bottom: 4px solid #00B9BD; }
+
+  .btn-call {
+    transition: all .2s;
+    border: 4px solid #128789; }
+
+  .btn-call:hover {
+    background: #fff;
+    color: #000; }
+    .btn-call:hover a {
+      border: none; }
+
+  .current {
+    border-bottom: 4px solid #00B9BD; } }
 .slide {
   display: flex !important;
   align-items: center;
   color: #fff;
   height: 100vh;
   text-align: center;
-  background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-concept-design.jpg");
+  background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-concept-design.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background-position: center; }
   .slide-concept-design {
-    background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-concept-design.jpg");
+    background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-concept-design.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   .slide-structure-design {
-    background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-structural-design.jpg");
+    background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-structural-design.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   .slide-construction-design {
-    background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-construction-design.jpg");
+    background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-construction-design.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   .slide-value-engineer {
-    background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-value-engineer.jpg");
+    background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-value-engineer.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   .slide-design-review {
-    background: linear-gradient(0deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.6)), url("../img/bg/bg-design-review.jpg");
+    background: linear-gradient(180deg, rgba(0, 185, 189, 0.6), rgba(73, 211, 213, 0.8)), url("../img/bg/bg-design-review.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background-position: center; }
   .slide .divider {
     border: 1px solid #fff; }
   .slide a {
+    transition: all .2s;
+    border: 4px solid #fff;
     text-decoration: none;
     color: inherit;
     font-weight: 700;
@@ -517,7 +656,19 @@ nav.overlay {
     background-color: #fff;
     padding: 0.625em 1.25em;
     border-radius: 100px; }
+    .slide a:hover {
+      color: #fff;
+      background: transparent; }
 
+@media (min-width: 768px) {
+  .slide {
+    text-align: left; }
+
+  .slide .wrapper p {
+    width: 50%; }
+  .slide .wrapper .divider {
+    margin-left: 0;
+    width: 20%; } }
 .modal {
   display: none;
   /* Hidden by default */
@@ -545,6 +696,7 @@ nav.overlay {
   padding: 1.25em;
   border: 1px solid #128789;
   width: 90%;
+  border-bottom: 4px solid #49D3D5;
   /* Could be more or less, depending on screen size */ }
 
 .close {
@@ -561,5 +713,11 @@ nav.overlay {
 
 .modal-content h3, .modal-content p, .modal-content ul, .modal-content li {
   text-align: left; }
+
+@media (min-width: 768px) {
+  .modal-content {
+    width: 50%; }
+    .modal-content p {
+      width: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
