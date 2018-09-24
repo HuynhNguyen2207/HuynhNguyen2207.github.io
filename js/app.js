@@ -1,40 +1,95 @@
-$(document).ready(function(){
-  $('.slide-header').slick({
+$(document).ready(function() {
+  $('.banner').slick({
     autoplay: true,
+    autoplaySpeed: 2000,
     arrows: false,
   });
-});
 
-$("#modal-civil-structure").iziModal({
-  title: 'Civil Structural Design Engineer',
-  headerColor: '#00B9BD',
-  closeButton: true,
-});
-
-$("#modal-bridge-design").iziModal({
-  title: 'Bridge Design engineer',
-  headerColor: '#00B9BD',
-  closeButton: true,
-});
-
-$("#modal-junior-design").iziModal({
-  title: 'Junior Design engineer',
-  headerColor: '#00B9BD',
-  closeButton: true,
+  $('.nav-bar').sticky();
 });
 
 
-$(document).on('click', '.civil-structure',function (event) {
+
+// Civil Engineer Modal
+// Get the modal
+var civilModal = document.getElementById('modal-civil');
+
+// Get the button that opens the modal
+var civilBtn = document.getElementById("btn-civil");
+
+// Get the <span> element that closes the modal
+var civilSpan = document.getElementsByClassName("close-civil")[0];
+
+// When the user clicks on the button, open the modal
+civilBtn.onclick = function() {
   event.preventDefault();
-  $('#modal-civil-structure').iziModal('open');
-});
+  civilModal.style.display = "block";
+}
 
-$(document).on('click', '.bridge-design',function (event) {
-  event.preventDefault();
-  $('#modal-bridge-design').iziModal('open');
-});
+// When the user clicks on <span> (x), close the modal
+civilSpan.onclick = function() {
+  civilModal.style.display = "none";
+}
 
-$(document).on('click', '.junior-design',function (event) {
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == civilModal) {
+    civilModal.style.display = "none";
+  }
+}
+
+// Bridge Engineer Modal
+// Get the modal
+var bridgeModal = document.getElementById('modal-bridge');
+
+// Get the button that opens the modal
+var bridgeBtn = document.getElementById("btn-bridge");
+
+// Get the <span> element that closes the modal
+var bridgeSpan = document.getElementsByClassName("close-bridge")[0];
+
+// When the user clicks on the button, open the modal
+bridgeBtn.onclick = function() {
   event.preventDefault();
-  $('#modal-junior-design').iziModal('open');
-});
+  bridgeModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+bridgeSpan.onclick = function() {
+  bridgeModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == bridgeModal) {
+    bridgeModal.style.display = "none";
+  }
+}
+
+// Junior Engineer Modal
+// Get the modal
+var juniorModal = document.getElementById('modal-junior');
+
+// Get the button that opens the modal
+var juniorBtn = document.getElementById("btn-junior");
+
+// Get the <span> element that closes the modal
+var juniorSpan = document.getElementsByClassName("close-junior")[0];
+
+// When the user clicks on the button, open the modal
+juniorBtn.onclick = function() {
+  event.preventDefault();
+  juniorModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+juniorSpan.onclick = function() {
+  juniorModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == juniorModal) {
+    juniorModal.style.display = "none";
+  }
+}

@@ -1,22 +1,40 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,700');
+/*
+Google Font:
+Roboto Sans
+Roboto Slab
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,700');
 
 /* Color Variable */
-$robinEggBlue: #00B9BD;
-$firefly : #123D3D;
-$black: #000;
-$white: #fff;
+$java                          : #00B9BD;
+$firefly                       : #123D3D;
+$blueChill                     : #128789;
+$turquoise                     : #49D3D5;
+$tiber                         : #043C3D;
+
+$black                         : #000;
+$white                         : #fff;
 
 /* Color Usage */
-$color-primary: $robinEggBlue;
+$color-primary                 : $java;
+$color-secondary               : $tiber;
+$color-tertiary                : $blueChill;
+$color-accent                  : $turquoise;
 
-$color-text--dark: $black;
-$color-text--light: $white;
+$color-text--dark              : $black;
+$color-text--light             : $white;
 
+// Gradient
+$bg-gradient           : linear-gradient(0deg, rgba($color-primary,.6), rgba($color-accent,.6));
 /* Font Usage */
-$font-roboto-sans    : 'Roboto', sans-serif;
-$font-roboto-slab    : 'Roboto Slab', serif;
+$font-roboto--sans             : 'Roboto', sans-serif;
+$font-roboto--slab             : 'Roboto Slab', serif;
 
 /* Font Weight */
-$font-weight--light  : 300;
-$font-weight--bold   : 700;
+$font-weight--light            : 300;
+$font-weight--regular          : 400;
+$font-weight--bold             : 700;
+
+/* Breakpoints */
+$breakpoint                    : 768px;
+$max-width                     : 1200px;

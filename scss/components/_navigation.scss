@@ -1,36 +1,41 @@
-.overlay {
-  display: flex;
+.nav-bar {
+  transition: all .5s;
+}
+
+.is-sticky {
+  z-index: 2;
+
+  .nav-bar {
+    border-bottom: 4px solid $color-primary;
+  }
+}
+
+nav.overlay {
+
+  background-color: $white;
+  background-image: none;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
-  z-index: 99;
-  background: $white;
+  z-index: 1;
 
   ul {
-    position: static;
-    font-size: px-to-em(26);
-  }
 
-  li {
-    padding: px-to-em(10);
-  }
+    top: 0;
 
-  ul li a {
-    font-family: $font-roboto-slab;
-    color: $color-text--dark;
+    font-family: $font-roboto--slab;
+    font-weight: $font-weight--bold;
+    font-size: px-to-em(24);
+
+    li {
+      margin: px-to-em(20) 0;
+    }
+
+    a {
+      @include link;
+    }
   }
 }
 
-.toggle-active .bar {
-  background: $color-primary;
-}
-
-.overlay ul li:last-of-type {
-  background: $color-primary;
-  padding-left: px-to-em(15);
-  padding-right: px-to-em(15);
-  border-radius: px-to-em(50);
-  a {
-    color: $color-text--light;
-  }
+.btn-call {
+  @include btn($color-text--light, $color-tertiary);
 }

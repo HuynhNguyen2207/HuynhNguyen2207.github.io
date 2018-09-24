@@ -1,15 +1,15 @@
-* {
-  font-family: $font-roboto-sans;
-  line-height: 1.5;
+header {
+  @include flex($dir: column);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-roboto-slab;
-  font-weight: $font-weight--bold;
-  text-transform: uppercase;
+.nav-bar,
+.nav-bar .wrapper,
+.overlay,
+.nav-social {
+  @include flex;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
 }
