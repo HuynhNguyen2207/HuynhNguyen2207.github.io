@@ -4,34 +4,33 @@
   color: $color-text--light;
   height: 100vh;
   text-align: center;
-  background: grey;
-  // background: $bg-gradient, url("../img/bg/bg-concept-design.jpg");
-  // @include slide-bg;
+  background: $bg-gradient, url("../img/bg/bg-concept-design.jpg");
+  @include slide-bg;
 
-  // &-concept-design {
-  //   background: $bg-gradient, url("../img/bg/bg-concept-design.jpg");
-  //   @include slide-bg;
-  // }
-  //
-  // &-structure-design {
-  //   background: $bg-gradient, url("../img/bg/bg-structural-design.jpg");
-  //   @include slide-bg;
-  // }
-  //
-  // &-construction-design {
-  //   background: $bg-gradient, url("../img/bg/bg-construction-design.jpg");
-  //   @include slide-bg;
-  // }
-  //
-  // &-value-engineer {
-  //   background: $bg-gradient, url("../img/bg/bg-value-engineer.jpg");
-  //   @include slide-bg;
-  // }
-  //
-  // &-design-review {
-  //   background: $bg-gradient, url("../img/bg/bg-design-review.jpg");
-  //   @include slide-bg;
-  // }
+  &-concept-design {
+    background: $bg-gradient, url("../img/bg/bg-concept-design.jpg");
+    @include slide-bg;
+  }
+
+  &-structure-design {
+    background: $bg-gradient, url("../img/bg/bg-structural-design.jpg");
+    @include slide-bg;
+  }
+
+  &-construction-design {
+    background: $bg-gradient, url("../img/bg/bg-construction-design.jpg");
+    @include slide-bg;
+  }
+
+  &-value-engineer {
+    background: $bg-gradient, url("../img/bg/bg-value-engineer.jpg");
+    @include slide-bg;
+  }
+
+  &-design-review {
+    background: $bg-gradient, url("../img/bg/bg-design-review.jpg");
+    @include slide-bg;
+  }
 
   .divider {
     border: 1px solid $white;
