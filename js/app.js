@@ -11,9 +11,13 @@ $(document).ready(function() {
 $(window).scroll(function () {
     var sc = $(window).scrollTop()
     if (sc > 100) {
-        $(".nav-bar").addClass("bg")
+        $(".nav-bar").addClass("bg");
+        $(".logo-header-desktop").hide();
+        $(".logo-header-mobile").show();
     } else {
-        $(".nav-bar").removeClass("bg")
+        $(".nav-bar").removeClass("bg");
+        $(".logo-header-desktop").show();
+        $(".logo-header-mobile").hide();
     }
 });
 

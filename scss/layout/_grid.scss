@@ -4,8 +4,7 @@ header {
 
 .nav-bar,
 .nav-bar .wrapper,
-.overlay,
-.nav-social {
+.overlay {
   @include flex;
 }
 

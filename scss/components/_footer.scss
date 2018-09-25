@@ -13,13 +13,16 @@ footer .wrapper {
 }
 
 .nav-social {
-  width: 60%;
+  width: 50%;
   height: px-to-em(50);
   margin: 0 auto;
-  justify-content: space-between;
+
+  display: flex;
   align-items: center;
+  justify-content: space-around;
 
   img {
+    display: inline-block;
     width: px-to-em(26);
   }
 

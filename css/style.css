@@ -399,13 +399,23 @@ header {
     width: 100%; }
 
   .nav-bar {
-    padding: 1.25em;
+    padding: 1.25em 0;
     background: transparent; }
 
   .bg {
     padding: 0;
-    background-color: #00B9BD;
-    border-bottom: 4px solid #fff; }
+    background-color: #fff;
+    border-bottom: 4px solid #00B9BD; }
+    .bg .btn-call {
+      border-color: #128789; }
+      .bg .btn-call a {
+        color: #128789 !important; }
+      .bg .btn-call:hover {
+        background-color: #128789; }
+    .bg a {
+      color: #128789 !important; }
+      .bg a:hover {
+        border-bottom-color: #128789 !important; }
 
   .nav-mobile {
     display: none; }

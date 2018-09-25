@@ -48,14 +48,33 @@
   }
 
   .nav-bar {
-    padding: px-to-em(20);
+    padding: px-to-em(20) 0;
     background: transparent;
   }
 
   .bg {
     padding: 0;
-    background-color: $color-primary;
-    border-bottom: 4px solid $white;
+    background-color: $white;
+    border-bottom: 4px solid $color-primary;
+
+    .btn-call {
+      border-color: $color-tertiary;
+      a {
+        color: $color-tertiary !important;
+      }
+
+      &:hover {
+        background-color: $color-tertiary;
+      }
+    }
+
+    a {
+      color: $color-tertiary !important;
+
+      &:hover {
+        border-bottom-color: $color-tertiary !important;
+      }
+    }
   }
 
   .nav-mobile {
