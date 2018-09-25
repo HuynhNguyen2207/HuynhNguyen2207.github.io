@@ -345,8 +345,7 @@ header {
 
 .nav-bar,
 .nav-bar .wrapper,
-.overlay,
-.nav-social {
+.overlay {
   display: flex;
   flex-direction: row; }
 
@@ -535,12 +534,14 @@ footer .wrapper {
   margin: 20px auto; }
 
 .nav-social {
-  width: 60%;
+  width: 50%;
   height: 3.125em;
   margin: 0 auto;
-  justify-content: space-between;
-  align-items: center; }
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
   .nav-social img {
+    display: inline-block;
     width: 1.625em; }
   .nav-social a:hover {
     opacity: .7; }
