@@ -1,0 +1,136 @@
+.content-text {
+  text-align: center;
+  p {
+    text-align: left;
+  }
+  a {
+    @include link;
+  }
+}
+
+.main-career {
+  p {
+    text-align: center;
+
+    a {
+      @include link;
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+      font-weight: inherit;
+    }
+  }
+
+  a {
+    @include btn($color-text--light, $color-tertiary);
+  }
+}
+
+.content-img {
+  display: none;
+}
+
+// .img-about {
+//   background: $bg-gradient, url("../img/bg/bg-who.jpg");
+//   @include slide-bg;
+//   background-size: 150%;
+// }
+
+.img {
+  &-about {
+    background:$bg-gradient--2 , url("../img/bg/bg-who.jpg");
+    @include slide-bg;
+    background-size: 120%;
+  }
+  &-work {
+    background:$bg-gradient--2 , url("../img/bg/bg-work.jpg");
+    @include slide-bg;
+    background-size: 120%;
+  }
+  &-concept-design {
+    background:$bg-gradient--2 , url("../img/bg/bg-concept-design.jpg");
+    @include slide-bg;
+    background-size: 120%;
+  }
+  &-structure-design {
+    background:$bg-gradient--2 , url("../img/bg/bg-structural-design.jpg");
+    @include slide-bg;
+    background-size: 120%;
+  }
+  &-construction-design {
+    background:$bg-gradient--2 , url("../img/bg/bg-construction-design.jpg");
+    @include slide-bg;
+    background-size: 150%;
+  }
+  &-value-engineer {
+    background:$bg-gradient--2 , url("../img/bg/bg-value-engineer.jpg");
+    @include slide-bg;
+    background-size: 100%;
+  }
+  &-design-review {
+    background:$bg-gradient--2 , url("../img/bg/bg-design-review.jpg");
+    @include slide-bg;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: $breakpoint) {
+  main .divider {
+    display: none;
+  }
+  main .content-block {
+    display: flex;
+
+    .content-wrapper {
+      margin: 0 auto;
+      display: flex;
+      max-width: $max-width;
+    }
+
+    .content-text {
+      flex: 1;
+      padding: px-to-em(50) px-to-em(20);
+    }
+
+    .content-img {
+      display: block;
+      flex: 2;
+      width: 100%;
+    }
+  }
+
+  .content-block .left {
+    order: -1;
+  }
+
+  .content-block .right {
+    order: 2;
+  }
+
+  .main-career .content-block .content-text {
+    text-align: left;
+    p {
+      text-align: left;
+    }
+  }
+
+  .main-career .content-block .content-text {
+    .wrapper {
+      display: flex;
+      align-items: center;
+      border-bottom: 4px solid $color-primary;
+    }
+
+    .button {
+      transition: all .2s;
+      border: 4px solid $color-tertiary;
+      margin-left: auto;
+    }
+
+    .button:hover {
+      background: $white;
+      color: $color-text--dark;
+    }
+  }
+
+}

@@ -8,6 +8,15 @@ $(document).ready(function() {
   $('.nav-bar').sticky();
 });
 
+$(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 100) {
+        $(".nav-bar").addClass("bg")
+    } else {
+        $(".nav-bar").removeClass("bg")
+    }
+});
+
 
 
 // Civil Engineer Modal

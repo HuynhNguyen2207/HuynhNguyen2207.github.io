@@ -1,0 +1,26 @@
+header {
+  @include flex($dir: column);
+}
+
+.nav-bar,
+.nav-bar .wrapper,
+.overlay,
+.nav-social {
+  @include flex;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (min-width: $breakpoint) {
+  .wrapper {
+    max-width: $max-width;
+  }
+
+  footer .wrapper {
+    @include flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,22 @@
+@mixin flex($flex: flex, $dir: row) {
+  display: $flex;
+  flex-direction: $dir;
+}
+
+@mixin link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin btn($color: $color-text--light,$bg: $color-text--dark) {
+  font-weight: $font-weight--bold;
+  color: $color;
+  background-color: $bg;
+  padding: px-to-em(10) px-to-em(20);
+  border-radius: 100px;
+}
+
+@mixin slide-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+}

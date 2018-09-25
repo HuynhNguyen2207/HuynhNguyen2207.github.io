@@ -1,0 +1,90 @@
+.nav-bar {
+  transition: all .5s;
+}
+
+.is-sticky {
+  z-index: 2;
+
+  .nav-bar {
+    border-bottom: 4px solid $color-primary;
+  }
+}
+
+nav.overlay {
+
+  background-color: $white;
+  background-image: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+
+  ul {
+
+    top: 0;
+
+    font-family: $font-roboto--slab;
+    font-weight: $font-weight--bold;
+    font-size: px-to-em(24);
+
+    li {
+      margin: px-to-em(20) 0;
+    }
+
+    a {
+      @include link;
+    }
+  }
+}
+
+.btn-call {
+  @include btn($color-text--light, $color-tertiary);
+}
+
+@media (min-width: $breakpoint) {
+  .nav-desktop {
+    ul{
+      display: flex;
+      align-items: center;
+
+      list-style-type: none;
+    }
+
+    ul li {
+      display: inline-block;
+      margin: 0 px-to-em(20);
+    }
+
+    ul li a {
+      @include link;
+      color: $color-text--light;
+      font-weight: $font-weight--bold;
+      transition: all .2s;
+    }
+  }
+
+  .nav-desktop a:hover {
+    border-bottom: 4px solid $white;
+  }
+
+  .btn-call {
+    transition: all .2s;
+    background: $white;
+    border: 4px solid $white;
+    a {
+      color: $color-text--dark !important;
+    }
+  }
+
+  .btn-call:hover {
+    color: black;
+    background-color: transparent;
+    a {
+      color: $color-text--light !important;
+      border: none;
+    }
+  }
+
+  .current {
+    border-bottom: 4px solid $white;
+  }
+}
