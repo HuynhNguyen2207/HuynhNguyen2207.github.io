@@ -1,96 +1,114 @@
+header {
+  height: 100vh;
+}
+
 .nav-bar {
-  padding: px-to-em(20) 0;
-  background: $white;
-}
-
-.nav-bar .wrapper {
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-header {
-  display: block;
-  width: px-to-em(150);
-}
-
-.logo-header-desktop {
-  display: none;
-}
-
-.toggle-button {
-
-  position: static;
+  position: fixed;
   top: 0;
   left: 0;
 
-  display: block;
-  width: px-to-em(30);
-  height: auto;
+  z-index: 2;
 
-  margin: 0;
+  width: 100vw;
+  padding: px-to-em(30) 0;
+
+  background: $white;
+
+  transition: all .3s;
+
+  .wrapper-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    fill: $color-primary;
+  }
+}
+
+.toggle-button {
+  position: static;
   padding: 0;
+  margin: 0;
   margin-left: auto;
 
   .bar {
-    background-color: $color-primary;
+    background: $color-primary;
   }
 }
 
-.nav-desktop {
-  display: none;
+.banner {
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
-@media (min-width: $breakpoint) {
-  .sticky-wrapper {
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-  }
+@media (min-width:$breakpoint) {
 
-  .nav-bar {
-    padding: px-to-em(20) 0;
-    background: transparent;
-  }
 
-  .bg {
-    padding: 0;
-    background-color: $white;
-    border-bottom: 4px solid $color-primary;
 
-    .btn-call {
-      border-color: $color-tertiary;
-      a {
-        color: $color-tertiary !important;
-      }
-
-      &:hover {
-        background-color: $color-tertiary;
-      }
-    }
-
-    a {
-      color: $color-tertiary !important;
-
-      &:hover {
-        border-bottom-color: $color-tertiary !important;
-      }
-    }
-  }
-
-  .nav-mobile {
+  .toggle-button {
     display: none;
   }
 
-  .nav-desktop {
+  .nav-bar {
+    background: transparent;
+  }
+
+  .logo-header {
+    transition: all .3s;
+    svg {fill:$white}
+
+    &:hover {opacity: .7}
+  }
+
+  .nav {
     display: block;
     margin-left: auto;
   }
 
-  .logo-header-desktop {
-    display: block;
-  }
+  .scrolled-nav {
+    background-color: $white;
+    border-bottom: 2px solid $color-accent;
+    padding: px-to-em(10) 0;
 
-  .logo-header-mobile {
-    display: none;
+    .logo-header {
+      svg{fill:$color-primary}
+    }
+
+    .nav {
+
+      a {
+        color:$color-primary;
+        &:hover {
+          border-bottom: 4px solid $color-primary;
+        }
+      }
+
+      a.current {
+        border-bottom: 4px solid $color-accent;
+      }
+
+      .btn-call-now {
+        @include btn($color-primary, transparent);
+        border: 2px solid $color-primary;
+
+        &:hover {
+          @include btn($color-text--light, $color-primary);
+          border: 2px solid $color-primary;
+        }
+      }
+    }
   }
 }

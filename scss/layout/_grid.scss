@@ -1,25 +1,6 @@
-header {
-  @include flex($dir: column);
-}
+.wrapper-inner {
+  width: 90%;
+  max-width: $max-width;
 
-.nav-bar,
-.nav-bar .wrapper,
-.overlay {
-  @include flex;
-}
-
-.wrapper {
-  width: 85%;
   margin: 0 auto;
-}
-
-@media (min-width: $breakpoint) {
-  .wrapper {
-    max-width: $max-width;
-  }
-
-  footer .wrapper {
-    @include flex;
-    align-items: center;
-  }
 }

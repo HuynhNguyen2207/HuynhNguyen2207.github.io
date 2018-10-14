@@ -1,136 +1,284 @@
-.content-text {
-  text-align: center;
-  p {
-    text-align: left;
-  }
-  a {
-    @include link;
+.content-block {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-top: 20px;
+
+}
+
+main.homepage,
+main.service {
+
+  .content-block {
+    align-items: flex-start;
+
+    .wrapper-outer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-text {
+      order: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content-img {
+      order: -1;
+      background: red;
+    }
   }
 }
 
-.main-career {
-  p {
+main.homepage {
+  h3 {
+    text-align: center;
+  }
+  #homepage-mobile-1 {
+    .content-text {height: 100vh}
+  }
+  #homepage-mobile-2 {
+    .content-text {height: 100vh}
+  }
+}
+
+main.service {
+
+  .content-text {height: 60vh}
+  .content-img {height: 40vh}
+
+  // #concept-design {
+  //   .content-text {height: 65vh}
+  //   .content-img {height: 50vh}
+  // }
+  //
+  // #structure-design {
+  //   .content-text {height: 65vh}
+  //   .content-img {height: 35vh}
+  // }
+  //
+  // #construction-design {
+  //   .content-text {height: 70vh}
+  //   .content-img {height: 30vh}
+  // }
+  //
+  // #value-engineer {
+  //   .content-text {height: 85vh}
+  //   .content-img {height: 15vh}
+  // }
+  //
+  // #design-review {
+  //   .content-text {height: 65vh}
+  //   .content-img {height: 35vh}
+  // }
+
+}
+
+main.service #content-text-desktop {
+  display: none;
+}
+
+main.career {
+
+  .content-text {
     text-align: center;
 
-    a {
-      @include link;
-      padding: 0;
-      margin: 0;
-      background-color: transparent;
-      font-weight: inherit;
+    .divider {
+      border: 2px solid $color-accent;
+      width: 10em;
+
+      margin: px-to-em(30) auto;
     }
   }
 
   a {
-    @include btn($color-text--light, $color-tertiary);
+    @include link;
+  }
+
+  .btn-career {
+    @include btn($color-text--light, $color-primary);
+    border: 2px solid $color-primary;
+    transition: all .3s;
+
+    &:hover {
+      @include btn($color-text--dark, transparent);
+    }
   }
 }
 
-.content-img {
-  display: none;
+@media(min-width: $breakpoint) {
+
+  main.homepage,
+  main.service {
+
+    .left {order: -1 !important;}
+
+    .right {order: 1 !important;}
+
+    .divider {
+      margin: px-to-em(10) auto;
+      width: 50%;
+      border: 2px solid $color-accent;
+    }
+
+    .wrapper-outer {
+      width: 80%;
+      height: 80%;
+      margin-top: px-to-em(72);
+      max-width: $max-width;
+      flex-direction: row !important;
+    }
+
+    .content {
+      &-block {
+        align-items: center;
+      }
+    }
+
+  }
+
+  main.homepage {
+    .content {
+      &-text {width:60%}
+      &-img {width: 40%}
+    }
+  }
+
+  main.service {
+    .content {
+      &-text {width: 40%}
+      &-img {width: 60%}
+    }
+  }
+
+  main.career {
+    .wrapper-outer {
+      width: 100%;
+    }
+
+    .divider {
+      display: none;
+    }
+
+    .content-text {
+      text-align: left;
+
+      .wrapper-inner {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: px-to-em(72);
+        margin-top: px-to-em(72);
+
+        border-bottom: 4px solid $color-accent;
+      }
+
+      .btn-career {
+        margin-left: auto;
+      }
+    }
+  }
 }
 
-// .img-about {
-//   background: $bg-gradient, url("../img/bg/bg-who.jpg");
-//   @include slide-bg;
-//   background-size: 150%;
-// }
+#homepage-desktop-1 .content-img {
+  background:
+    $gradient-20,
+    url("../img/bg/bg-homepage.jpg");
+  background-size: cover, cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 
-.img {
-  &-about {
-    background:$bg-gradient--2 , url("../img/bg/bg-who.jpg");
-    @include slide-bg;
-    background-size: 120%;
+main.service {
+  #concept-design .content-img {
+    background: $gradient-20,
+    url("../img/bg/services/bg-concept-design.png");
+    background-size: cover, 100vw;
+    background-position: center center,  center center;
+    background-repeat: no-repeat;
   }
-  &-work {
-    background:$bg-gradient--2 , url("../img/bg/bg-work.jpg");
-    @include slide-bg;
-    background-size: 120%;
+
+  @media (min-width: $breakpoint) {
+    #concept-design .content-img {
+      background-size: cover, cover;
+      background-position: center center, center center;
+    }
   }
-  &-concept-design {
-    background:$bg-gradient--2 , url("../img/bg/bg-concept-design.jpg");
-    @include slide-bg;
-    background-size: 120%;
+
+  #structure-design .content-img {
+    background: $gradient-20,
+    url("../img/bg/services/bg-structural-design.png");
+    background-size: cover, 100vw;
+    background-position: center center, center center;
+    background-repeat: no-repeat;
   }
-  &-structure-design {
-    background:$bg-gradient--2 , url("../img/bg/bg-structural-design.jpg");
-    @include slide-bg;
-    background-size: 120%;
+
+  @media (min-width: $breakpoint) {
+    #structure-design .content-img {
+      background-size: cover, cover;
+      background-position: center center, center center;
+    }
   }
-  &-construction-design {
-    background:$bg-gradient--2 , url("../img/bg/bg-construction-design.jpg");
-    @include slide-bg;
-    background-size: 150%;
+
+  #construction-design .content-img {
+    background: $gradient-20,
+    url("../img/bg/services/bg-construction-design.png");
+    background-size: cover, 100vw;
+    background-position: center center, top 120% center;
+    background-repeat: no-repeat;
   }
-  &-value-engineer {
-    background:$bg-gradient--2 , url("../img/bg/bg-value-engineer.jpg");
-    @include slide-bg;
-    background-size: 100%;
+
+  @media (min-width: $breakpoint) {
+    #construction-design .content-img {
+      background-size: cover, cover;
+      background-position: center center, center center;
+    }
   }
-  &-design-review {
-    background:$bg-gradient--2 , url("../img/bg/bg-design-review.jpg");
-    @include slide-bg;
-    background-size: 100%;
+
+  #value-engineer .content-img {
+    background: $gradient-20,
+    url("../img/bg/services/bg-value-engineer.jpg");
+    background-size: cover, cover;
+    background-position: center center, center center;
+    background-repeat: no-repeat;
+  }
+
+  #design-review .content-img {
+    background: $gradient-20,
+    url("../img/bg/services/bg-design-review.png");
+    background-size: cover, 90vw;
+    background-position: center center, top center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $breakpoint) {
+    #design-review .content-img {
+      background-size: cover, cover;
+      background-position: center center, center center;
+    }
   }
 }
 
 @media (min-width: $breakpoint) {
-  main .divider {
+
+  main.service #content-text-mobile {
     display: none;
   }
-  main .content-block {
+
+  main.service #content-text-desktop {
     display: flex;
-
-    .content-wrapper {
-      margin: 0 auto;
-      display: flex;
-      max-width: $max-width;
-    }
-
-    .content-text {
-      flex: 1;
-      padding: px-to-em(50) px-to-em(20);
-    }
-
-    .content-img {
-      display: block;
-      flex: 2;
-      width: 100%;
-    }
   }
 
-  .content-block .left {
-    order: -1;
-  }
-
-  .content-block .right {
-    order: 2;
-  }
-
-  .main-career .content-block .content-text {
-    text-align: left;
-    p {
-      text-align: left;
+  main.service {
+    #concept-design,
+    #structure-design,
+    #construction-design,
+    #value-engineer,
+    #design-review {
+      .content-text {height: auto}
+      .content-img {height: auto}
     }
   }
-
-  .main-career .content-block .content-text {
-    .wrapper {
-      display: flex;
-      align-items: center;
-      border-bottom: 4px solid $color-primary;
-    }
-
-    .button {
-      transition: all .2s;
-      border: 4px solid $color-tertiary;
-      margin-left: auto;
-    }
-
-    .button:hover {
-      background: $white;
-      color: $color-text--dark;
-    }
-  }
-
 }

@@ -1,4 +1,4 @@
-*.psd
-*~
+demo/
 node_modules/
+test/
 npm-debug.log

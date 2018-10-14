@@ -12,11 +12,12 @@
   font-weight: $font-weight--bold;
   color: $color;
   background-color: $bg;
-  padding: px-to-em(10) px-to-em(20);
+  padding: px-to-em(10) px-to-em(15);
   border-radius: 100px;
 }
 
 @mixin slide-bg {
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }

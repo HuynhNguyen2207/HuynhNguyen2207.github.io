@@ -4,7 +4,7 @@
 
 body {
   font-family: $font-roboto--sans;
-  font-weight: $font-weight--light;
+  font-weight: $font-weight--regular;
   line-height: 1.5;
 }
 
@@ -16,16 +16,21 @@ h5,
 h6 {
   font-family: $font-roboto--slab;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.text-bold {
-  font-weight: $font-weight--bold;
+.text {
+  &-bold {
+    font-weight: $font-weight--bold;
+  }
+  &-uppercase {
+    text-transform: uppercase;
+  }
 }
 
-.divider {
-  width: 50%;
-  margin: px-to-em(40) auto;
-  border: 4px solid $color-accent;
+.foot-note {
+  font-style: italic;
 }
 
 .underline-effect {
@@ -33,4 +38,16 @@ h6 {
   background-repeat: no-repeat;
   background-size: 100% .4em;
   background-position: 0 100%;
+}
+
+@media (max-width: $breakpoint) {
+  h1 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+  }
 }

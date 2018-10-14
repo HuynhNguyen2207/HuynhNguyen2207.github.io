@@ -5,11 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <!-- Overlay Menu CSS -->
-  <link rel="stylesheet" href="jquery/overlay-menu/overlay.css">
-  <!-- Slick Slideshow CSS -->
-  <link rel="stylesheet" href="jquery/slick/slick.css">
-  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="plugin/overlay-menu/overlay.css">
+  <!-- SLick Theme CSS -->
+  <link rel="stylesheet" href="plugin/slick/slick.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Main Style Sheet -->
   <link rel="stylesheet" href="css/style.css">
   <title>Pontech -- Career</title>
 </head>
@@ -21,143 +31,100 @@
 
     <!-- Navigation Bar -->
     <section class="nav-bar">
-      <div class="wrapper">
+      <div class="wrapper-inner">
 
-        <!-- Header logo -->
-        <a class="logo-header-desktop" href="index.html">
-          <img class="logo-header" src="img/logo/logo-horizontal-w.png" alt="Header Logo">
-        </a>
-        <a class="logo-header-mobile" href="index.html">
-          <img class="logo-header" src="img/logo/logo-horizontal.png" alt="Header Logo">
+        <!-- Header Logo -->
+        <a href="index.html" class="logo-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="110" height="21.4"><path class="st0" d="M31.2 4.9h-5.8v2.2h1.4v7.2h-1.4v2.2H31v-2.2h-1.7v-1.1H31c2.9 0 4.9-1.7 4.9-4.2-.1-2.4-1.9-4.1-4.7-4.1zm.2 6.1h-2.1V7.2h1.9c1.4 0 2.3.7 2.3 1.8-.1 1.1-1 2-2.1 2zm25.4-6H62v2.2h-1.4v9.3h-1.9l-5.9-7v4.9h1.4v2.2H49v-2.2h1.4V7.1H49V5h3.1l6.1 7.3V7.1h-1.4V5zm5.7 0h10.7v4.1H71V7.2h-2v7.1h1.8v2.2h-6.1v-2.2h1.9V7.2h-2v1.9h-2.2l.1-4.1zm19.2 7.3h2.2v4.2H74v-2.2h1.4V7.1H74V5h9.8v4.1h-2.2V7.2h-3.9v2.5h3.7v2.2h-3.7v2.3h3.9l.1-1.9zm26.9-5.2v7.2h1.4v2.2h-5.2v-2.2h1.4v-2.4h-5v2.4h1.4v2.2h-5.2v-2.2h1.4V7.1h-1.4V5h5.2v2.2h-1.4v2.6h5V7.1h-1.4V5h5.2v2.2l-1.4-.1zM48.4 9.6c0 .2 0 .3.1.5H46c0-.2-.1-.4-.1-.5-.3-1.2-1.3-2.2-2.5-2.5-1.9-.5-3.8.6-4.3 2.5 0 .2-.1.3-.1.5v.9h-2.4v-.5h2.2v-.3h-2.2c0-.2 0-.4.1-.5.5-2.4 2.4-4.3 4.8-4.8 3.2-.6 6.3 1.5 6.9 4.7zm-2.4.8h2.5v.5h-2.3v.3h2.2c0 .2 0 .4-.1.5-.5 2.8-3 4.9-5.9 4.9s-5.3-2-5.9-4.9c0-.2 0-.3-.1-.5h2.4c.2 1.8 1.7 3.1 3.5 3.1 1.6 0 3-1.1 3.4-2.6 0-.2.1-.3.1-.5v-.5c.2-.1.2-.2.2-.3zm39.2.5h-.4v-.5H87v-.3h-2.3c0-.2 0-.4.1-.5.5-2.9 3-4.9 5.9-4.9 1.2 0 2.5.3 3.5 1.1V5h2.3v4.7h-2.2v-.2C93.8 8 92.4 7 90.8 7s-3.1 1-3.5 2.6c0 .2-.1.4-.1.5v.9l-2-.1zm8.9.8h2.4v.3c-.5 2.8-2.9 4.8-5.7 4.7-2.9.1-5.5-2-6-4.9 0-.2 0-.3-.1-.5h2.5c0 .2.1.4.1.5.4 1.6 1.9 2.6 3.5 2.6 1.5.1 2.9-1 3.2-2.5l.1-.2zm-73.6 0H17c0 .1-.1.3-.1.4h-1.6v-1.2H17v.3h4.3v-.9H17v.2h-.4V9.3c.1.1.1.1.2.1 0 .1 0 .2.1.3h4.3c0-.3 0-.6-.1-.9C20.1 3 14.6-.9 8.8.2 4.4 1 1 4.4.2 8.8c0 .3-.1.6-.1.9h4.3c0-.1 0-.2.1-.3.1 0 .2-.1.2-.1v1.1h-.4v-.2H0v1h4.3v-.3H6v1.2H4.5c0-.1-.1-.3-.1-.4H0c0 .3.1.6.1.9 1.1 5.8 6.7 9.6 12.5 8.5 4.3-.8 7.7-4.2 8.5-8.5.1-.3.1-.6.1-.9h-.7zm-6-1.2H14V8.7c.2-.2.4-.5.6-.7v2.5h-.1zm1.3 0h-.5V7.9c.1.2.3.5.5.7v1.9zm.1 0V8.7l.6.6v1.2h-.6zm-10.5 0h-.6V9.3l.6-.6v1.8zm.6 0h-.4V8.6c.1-.2.3-.4.4-.6v2.5zm0-3.1c-.3.7-.8 1.3-1.5 1.8 0-.1 0-.3.1-.4.9-3.4 4.3-5.4 7.7-4.5 2.2.6 4 2.3 4.5 4.5 0 .1.1.3.1.4-.7-.4-1.2-1-1.5-1.8h-.8c-.7 1.5-2.2 2.4-3.8 2.2-1.7.2-3.3-.7-3.9-2.2H6zm7.8 1.4v1.7H13V9.3c.3-.1.6-.3.8-.5zm-.9.6v1.1h-.8v-.8c.3-.1.6-.2.8-.3zm-.9.3v.8h-.8v-.7c.3 0 .5-.1.8-.1zm-.9.1v.7h-.8v-.7h.8zm-1 0v.6h-.8v-.7c.3.1.6.1.8.1zm-.9-.2v.8h-.8v-1c.3.1.5.2.8.2zm-.9-.3v1.2h-.8V8.7c.2.2.5.4.8.6zm-.9-.7v1.9h-.5V7.9c.1.3.3.5.5.7zm-.5 2.3h7.6v1.2H6.9v-1.2zm2.2 6.2c-2-.5-3.7-2-4.3-4h11.9c-1.1 3.1-4.4 4.9-7.6 4z"/>
+          </svg>
         </a>
 
-        <!-- Navigation -->
-        <nav class="overlay nav-mobile" id="overlay">
-          <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li class="btn-call"><a href="tel:+">Call Us Now</a></li>
-          </ul>
+        <!-- Navigation Menu -->
+        <nav class="overlay" id="overlay">
+          <a href="index.html">Homepage</a>
+          <a href="services.html">Services</a>
+          <a class="current" href="career.html">Career</a>
+          <a href="tel:+84912649963" class="btn-call-now">Call Us Now</a>
         </nav>
 
-        <div class="toggle-button nav-mobile" id="toggle">
+        <!-- Menu Toggle Button -->
+        <div class="toggle-button" id="toggle">
           <span class="bar top"></span>
           <span class="bar middle"></span>
           <span class="bar bottom"></span>
         </div>
 
-        <nav class="nav-desktop">
-          <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="career.html" class="current">Career</a></li>
-            <li class="btn-call"><a href="tel:+">Call Us Now</a></li>
-          </ul>
-        </nav>
-
-
       </div>
     </section>
 
-    <!-- Image Slider -->
+    <!-- Image Slide -->
     <section class="banner">
 
       <!-- One Slide -->
-      <div class="slide">
-        <div class="wrapper">
-          <h3>Dear Talents</h3>
+      <div class="slide slide-career">
+        <div class="wrapper-inner">
+          <h3>Dear Talents,</h3>
           <p>We are recruiting for exciting projects in Vietnam and Asia. Please see our open vacancies below</p>
+          <hr class="divider">
+          <a href="#career-mobile" class="btn-banner btn-banner-career">Apply Now</a>
         </div>
       </div>
-
     </section>
 
   </header>
 
-  <!-- Main Body -->
-  <main class="main-career">
+  <main class="content-desktop career"  id="career-desktop">
 
-    <!-- Content Block (Copy this block for additional content) -->
     <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
 
-      <!--Content Text-->
-      <div class="content-text">
-        <div class="wrapper">
-          <div class="job-info">
-          <h3><span class="underline-effect">Civil Structural Design Engineer</span></h3>
-          <p>
-            <span class="text-bold">Full-Time Position</span>
-          </p>
-          <p>
-            <span class="text-bold">Location:</span><br>
-            Sistrict 7, HCMC
-          </p>
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">CIVIL STRUCTURAL DESIGN ENGINEER</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a id="open-civil-engineer-desktop" href="#" class="btn-career">Learn more</a>
           </div>
 
-          <a class="button" href="#" id="btn-civil">Learn More</a>
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">BRIDGE DESIGN ENGINEER</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a href="#" id="open-bridge-engineer-desktop" class="btn-career">Learn more</a>
+          </div>
 
-          <div id="modal-civil" class="modal">
-            <div class="modal-content">
-              <span class="close close-civil">&times;</span>
-              <h3><span class="underline-effect">Civil Structural Design Engineer</span></h3>
+        </div>
+      </div>
+    </section>
 
-              <div>
-                <p><span class="text-bold">Type work:</span></p>
-                <p>Full-time</p>
-              </div>
+    <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
 
-              <div>
-                <p><span class="text-bold">Descriptions of work:</span></p>
-                <ul>
-                  <li>
-                    Technical responsibility: Initiate the design and calculation of concrete and/or steel structure.
-                  </li>
-                  <li>
-                    Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution.
-                  </li>
-                </ul>
-                <p>Details shall be discussed directly at the interview.</p>
-              </div>
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">JUNIOR DESIGN ENGINEER / DRAFT MAN</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a href="#" class="btn-career" id="open-junior-engineer-desktop">Learn more</a>
+          </div>
 
-              <div>
-                <p><span class="text-bold">Requirements:</span></p>
-                <ul>
-                  <li>Degrees: University and/or Higher.</li>
-                  <li>At least 5-years experiences in structure design: Design, modelling and analyze civil structures (concrete building, steel building, roof structure…). Familiar with using common structural analysis software.</li>
-                  <li>Experienced in applying design standards, including Vietnamese standards and ASCE/AISC/ACI.</li>
-                  <li>Experienced structural design for project located in the high seismic zone will be a plus</li>
-                  <li>Good at AutoCAD and Revit is an advantage.</li>
-                  <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Benefits:</span></p>
-                <ul>
-                  <li>Attractive Salary + 13th month: negotiable.</li>
-                  <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
-                  <li>Training courses to be provided.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Required Documents:</span></p>
-                <ul>
-                  <li>Application Letter and CV in English.</li>
-                  <li>Copy of Relevant Degrees.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Work Location:</span></p>
-                <p>District 7, Ho Chi Minh City</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Contact:</span></p>
-                <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
-              </div>
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">INTERNSHIP</span></h3>
+              <p><span class="text-bold">Dear Students</span></p>
+              <p>We always welcome young talents from bridge/civil training programs and offer relevant internship opportunities. Should you are interested in, drop us a line at <span class="underline-effect"><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></span></p>
             </div>
           </div>
 
@@ -165,249 +132,512 @@
       </div>
     </section>
 
-    <!-- Horizontal Divider -->
-    <hr class="divider">
+    <!-- Modal Box Background -->
+    <div id="modal-civil-engineer-desktop" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
 
-    <!-- Content Block (Copy this block for additional content) -->
-    <section class="content-block">
+        <p id="close-civil-engineer-desktop" class="btn-close">&times;</p>
 
-      <!--Content Text-->
-      <div class="content-text">
-        <div class="wrapper">
-          <div class="job-info">
-          <h3><span class="underline-effect">Bridge Design engineer</span></h3>
-          <p>
-            <span class="text-bold">Full-Time Position</span>
-          </p>
-          <p>
-            <span class="text-bold">Location:</span><br>
-            Sistrict 7, HCMC
-          </p>
-          </div>
+        <h3><span class="underline-effect">Civil Structural Design Engineer</span></h3>
 
-          <a class="button" href="#" id="btn-bridge">Learn More</a>
-
-          <div id="modal-bridge" class="modal">
-            <div class="modal-content">
-              <span class="close close-bridge">&times;</span>
-
-              <h3><span class="underline-effect">Bridge Design engineer</span></h3>
-
-              <div>
-                <p><span class="text-bold">Type work:</span></p>
-                <p>Full-time</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Descriptions of work:</span></p>
-                <ul>
-                  <li>
-                    Technical responsibility: Initiate the design and calculation of concrete and/or steel bridge structures.
-                  </li>
-                  <li>
-                    Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution
-                  </li>
-                </ul>
-                <p>Details shall be discussed directly at the interview.</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Requirements:</span></p>
-                <ul>
-                  <li>Degrees: University and/or Higher.</li>
-                  <li>At least 5-years experiences in bridge structure design: Design, modelling and analyze bridge structures, using common bridge structural analysis software.</li>
-                  <li>Have experiences in applying design standards, including Vietnamese standard 22TCN 272-05 (or later) and AASHTO LRFD.</li>
-                  <li>Good at AutoCAD, and Revit is an advantage.</li>
-                  <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Benefits:</span></p>
-                <ul>
-                  <li>Attractive Salary + 13th month: negotiable.</li>
-                  <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
-                  <li>Training courses to be provided.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Required Documents:</span></p>
-                <ul>
-                  <li>Application Letter and CV in English.</li>
-                  <li>Copy of Relevant Degrees.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Work Location:</span></p>
-                <p>District 7, Ho Chi Minh City</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Contact:</span></p>
-                <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
-              </div>
-
-            </div>
-          </div>
-
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Horizontal Divider -->
-    <hr class="divider">
-
-    <!-- Content Block (Copy this block for additional content) -->
-    <section class="content-block">
-
-      <!--Content Text-->
-      <div class="content-text">
-        <div class="wrapper">
-          <div class="job-info">
-          <h3><span class="underline-effect">Junior design engineer / Draft man</span></h3>
-          <p>
-            <span class="text-bold">Full-Time Position</span>
-          </p>
-          <p>
-            <span class="text-bold">Location:</span><br>
-            Sistrict 7, HCMC
-          </p>
-          </div>
-
-          <a class="button" href="#" id="btn-junior">Learn More</a>
-
-          <div id="modal-junior" class="modal">
-            <div class="modal-content">
-              <span class="close close-junior">&times;</span>
-
-              <h3><span class="underline-effect">Junior design engineer / Draft man</span></h3>
-
-              <div>
-                <p><span class="text-bold">Type work:</span></p>
-                <p>Full-time</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Descriptions of work:</span></p>
-                <ul>
-                  <li>
-                    Assist team leader in establishing structure drawings and develop detailing for structures: Concrete structure, Steel structure.
-                  </li>
-                  <li>
-                    Details shall be discussed directly in the interview.
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Requirements:</span></p>
-                <ul>
-                  <li>Degrees: University. Fresh graduates are welcome.</li>
-                  <li>Have 1-3 years experiences in conducting and detailing Shop/Working Drawings for concrete structures, experience in bridge structure detailing is an advantage.</li>
-                  <li>AutoCAD and Revit skills are must-have.</li>
-                  <li>Thorough Knowledge in programming for AutoCAD, Revit (using Auto lisp, VBA, Dynamo…) is an advantage.</li>
-                  <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Benefits:</span></p>
-                <ul>
-                  <li>Attractive Salary + 13th month: negotiable.</li>
-                  <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
-                  <li>Training courses to be provided.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Required Documents:</span></p>
-                <ul>
-                  <li>Application Letter and CV in English.</li>
-                  <li>Copy of Relevant Degrees.</li>
-                </ul>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Work Location:</span></p>
-                <p>District 7, Ho Chi Minh City</p>
-              </div>
-
-              <div>
-                <p><span class="text-bold">Contact:</span></p>
-                <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
-              </div>
-
-            </div>
-          </div>
-
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Technical responsibility: Initiate the design and calculation of concrete and/or steel structure.
+            </li>
+            <li>
+              Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution.
+            </li>
+          </ul>
+          <p>Details shall be discussed directly at the interview.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- Horizontal Divider -->
-    <hr class="divider">
-
-    <!-- Content Block (Copy this block for additional content) -->
-    <section class="content-block">
-
-      <!--Content Text-->
-      <div class="content-text">
-        <div class="wrapper">
-          <div class="job-info">
-          <h3><span class="underline-effect">Internship</span></h3>
-          <p>
-            <span class="text-bold">Dear Students</span>
-          </p>
-          <p>
-            We always welcome young talents from bridge/civil training programs and offer relevant internship opportunities. Should you are interested in, drop us a line at <a href="mailto:hi@pontech.vn"><span class="underline-effect">hi@pontech.vn</span></a>
-          </p>
-          </div>
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University and/or Higher.</li>
+            <li>At least 5-years experiences in structure design: Design, modelling and analyze civil structures (concrete building, steel building, roof structure…). Familiar with using common structural analysis software.</li>
+            <li>Experienced in applying design standards, including Vietnamese standards and ASCE/AISC/ACI.</li>
+            <li>Experienced structural design for project located in the high seismic zone will be a plus</li>
+            <li>Good at AutoCAD and Revit is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
         </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><span class="underline-effect"><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></span></p>
+        </div>
+
       </div>
-    </section>
+    </div>
 
-    <!-- Horizontal Divider -->
-    <hr class="divider">
+    <!-- Modal Box Background -->
+    <div id="modal-bridge-engineer-desktop" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
 
+        <p id="close-bridge-engineer-desktop" class="btn-close">&times;</p>
+
+        <h3><span class="underline-effect">Bridge Design engineer</span></h3>
+
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Technical responsibility: Initiate the design and calculation of concrete and/or steel bridge structures.
+            </li>
+            <li>
+              Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution
+            </li>
+          </ul>
+          <p>Details shall be discussed directly at the interview.</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University and/or Higher.</li>
+            <li>At least 5-years experiences in bridge structure design: Design, modelling and analyze bridge structures, using common bridge structural analysis software.</li>
+            <li>Have experiences in applying design standards, including Vietnamese standard 22TCN 272-05 (or later) and AASHTO LRFD.</li>
+            <li>Good at AutoCAD, and Revit is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal Box Background -->
+    <div id="modal-junior-engineer-desktop" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
+
+        <p id="close-junior-engineer-desktop" class="btn-close">&times;</p>
+
+        <h3><span class="underline-effect">Junior design engineer / Draft man</span></h3>
+
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Assist team leader in establishing structure drawings and develop detailing for structures: Concrete structure, Steel structure.
+            </li>
+            <li>
+              Details shall be discussed directly in the interview.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University. Fresh graduates are welcome.</li>
+            <li>Have 1-3 years experiences in conducting and detailing Shop/Working Drawings for concrete structures, experience in bridge structure detailing is an advantage.</li>
+            <li>AutoCAD and Revit skills are must-have.</li>
+            <li>Thorough Knowledge in programming for AutoCAD, Revit (using Auto lisp, VBA, Dynamo…) is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
+        </div>
+
+      </div>
+    </div>
 
   </main>
 
+  <!-- Main Mobile Content Body -->
+  <main class="content-mobile career" id="career-mobile">
+
+    <!-- One block of content -->
+    <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">CIVIL STRUCTURAL DESIGN ENGINEER</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a id="open-civil-engineer-mobile" href="#" class="btn-career">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- One block of content -->
+    <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">BRIDGE DESIGN ENGINEER</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a href="#" id="open-bridge-engineer-mobile" class="btn-career">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- One block of content -->
+    <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">JUNIOR DESIGN ENGINEER / DRAFT MAN</span></h3>
+              <p><span class="text-bold">Full-time Position</span></p>
+              <p><span class="text-bold">Location:</span></p>
+              <p>District 7, HCMC</p>
+            </div>
+            <hr class="divider">
+            <a href="#" class="btn-career" id="open-junior-engineer-mobile">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- One block of content -->
+    <section class="content-block">
+      <div class="wrapper-outer">
+        <div class="content-text">
+          <div class="wrapper-inner">
+            <div class="job-info">
+              <h3><span class="underline-effect">INTERNSHIP</span></h3>
+              <p><span class="text-bold">Dear Students</span></p>
+              <p>We always welcome young talents from bridge/civil training programs and offer relevant internship opportunities. Should you are interested in, drop us a line at <span class="underline-effect"><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Box Background -->
+    <div id="modal-civil-engineer-mobile" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
+
+        <p id="close-civil-engineer-mobile" class="btn-close">&times;</p>
+
+        <h3><span class="underline-effect">Civil Structural Design Engineer</span></h3>
+
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Technical responsibility: Initiate the design and calculation of concrete and/or steel structure.
+            </li>
+            <li>
+              Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution.
+            </li>
+          </ul>
+          <p>Details shall be discussed directly at the interview.</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University and/or Higher.</li>
+            <li>At least 5-years experiences in structure design: Design, modelling and analyze civil structures (concrete building, steel building, roof structure…). Familiar with using common structural analysis software.</li>
+            <li>Experienced in applying design standards, including Vietnamese standards and ASCE/AISC/ACI.</li>
+            <li>Experienced structural design for project located in the high seismic zone will be a plus</li>
+            <li>Good at AutoCAD and Revit is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><span class="underline-effect"><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal Box Background -->
+    <div id="modal-bridge-engineer-mobile" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
+
+        <p id="close-bridge-engineer-mobile" class="btn-close">&times;</p>
+
+        <h3><span class="underline-effect">Bridge Design engineer</span></h3>
+
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Technical responsibility: Initiate the design and calculation of concrete and/or steel bridge structures.
+            </li>
+            <li>
+              Project coordination: Working with internal and external stakeholders in both local & overseas projects to deliver smooth and effective execution
+            </li>
+          </ul>
+          <p>Details shall be discussed directly at the interview.</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University and/or Higher.</li>
+            <li>At least 5-years experiences in bridge structure design: Design, modelling and analyze bridge structures, using common bridge structural analysis software.</li>
+            <li>Have experiences in applying design standards, including Vietnamese standard 22TCN 272-05 (or later) and AASHTO LRFD.</li>
+            <li>Good at AutoCAD, and Revit is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Modal Box Background -->
+    <div id="modal-junior-engineer-mobile" class="modal animated fadeIn">
+      <!-- Modal Content -->
+      <div class="modal-content">
+
+        <p id="close-junior-engineer-mobile" class="btn-close">&times;</p>
+
+        <h3><span class="underline-effect">Junior design engineer / Draft man</span></h3>
+
+        <div>
+          <p><span class="text-bold">Type work:</span></p>
+          <p>Full-time</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Descriptions of work:</span></p>
+          <ul>
+            <li>
+              Assist team leader in establishing structure drawings and develop detailing for structures: Concrete structure, Steel structure.
+            </li>
+            <li>
+              Details shall be discussed directly in the interview.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Requirements:</span></p>
+          <ul>
+            <li>Degrees: University. Fresh graduates are welcome.</li>
+            <li>Have 1-3 years experiences in conducting and detailing Shop/Working Drawings for concrete structures, experience in bridge structure detailing is an advantage.</li>
+            <li>AutoCAD and Revit skills are must-have.</li>
+            <li>Thorough Knowledge in programming for AutoCAD, Revit (using Auto lisp, VBA, Dynamo…) is an advantage.</li>
+            <li>Good command of English: basic oral skill and good at reading/writing reports.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Benefits:</span></p>
+          <ul>
+            <li>Attractive Salary + 13th month: negotiable.</li>
+            <li>Health and Social Insurance as regulated by Vietnamese labour law.</li>
+            <li>Training courses to be provided.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Required Documents:</span></p>
+          <ul>
+            <li>Application Letter and CV in English.</li>
+            <li>Copy of Relevant Degrees.</li>
+          </ul>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Work Location:</span></p>
+          <p>District 7, Ho Chi Minh City</p>
+        </div>
+
+        <div>
+          <p><span class="text-bold">Contact:</span></p>
+          <p><a href="mailto:hi@pontech.vn">hi@pontech.vn</a></p>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+
   <!-- Main Footer -->
   <footer>
-    <div class="wrapper">
+    <div class="wrapper-inner">
 
       <!-- Footer Logo -->
-      <a href="index.html">
-        <img class="logo-footer" src="img/logo/logo-verical.png" alt="Footer Logo">
+      <a href="index.html" class="logo-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="84.5" height="69.5"><path class="st0" d="M5.8 57.8H0V60h1.4v7.2H0v2.2h5.5v-2.2H3.8v-1.1h1.7c2.9 0 4.9-1.7 4.9-4.2-.1-2.5-1.9-4.1-4.6-4.1zm.1 6.1H3.8v-3.8h1.9c1.4 0 2.3.7 2.3 1.8s-.9 2-2.1 2zm25.5-6.1h5.2V60h-1.4v9.3h-1.9l-5.9-7v4.9h1.4v2.2h-5.2v-2.2H25V60h-1.4v-2.2h3.1l6.1 7.3V60h-1.4v-2.2zm5.6 0h10.7V62h-2.2v-1.9h-2v7.1h1.8v2.2h-6.1v-2.2h1.9v-7.1h-2V62H37v-4.2zm19.2 7.4h2.2v4.2h-9.8v-2.2H50V60h-1.4v-2.2h9.8V62h-2.2v-1.9h-3.9v2.5H56v2.2h-3.7v2.3h3.9v-1.9zm27-5.2v7.2h1.4v2.2h-5.2v-2.2h1.4v-2.4h-5v2.4h1.4v2.2H72v-2.2h1.4V60H72v-2.2h5.2V60h-1.4v2.6h5V60h-1.4v-2.2h5.2V60h-1.4zm-60.3 2.5c0 .2 0 .3.1.5h-2.5c0-.2-.1-.4-.1-.5-.3-1.2-1.3-2.2-2.5-2.5-1.9-.5-3.8.6-4.3 2.5 0 .2-.1.3-.1.5v.9h-2.4v-.5h2.2v-.3h-2.2c0-.2 0-.4.1-.5.5-2.4 2.4-4.3 4.8-4.8 3.2-.7 6.3 1.5 6.9 4.7zm-2.4.8H23v.5h-2.3v.3h2.2c0 .2 0 .4-.1.5-.5 2.8-3 4.9-5.9 4.9s-5.3-2-5.9-4.9c0-.2 0-.3-.1-.5h2.4c.2 1.8 1.7 3.1 3.5 3.1 1.6 0 3-1.1 3.4-2.6 0-.2.1-.3.1-.5v-.5c.2-.1.2-.2.2-.3zm44.7-5.7c1.3 0 2.5.3 3.5 1.1v-.8H71v4.7h-2.2v-.2c-.4-1.5-1.8-2.5-3.4-2.5s-3.1 1-3.5 2.6c0 .2-.1.4-.1.5v.9h-2.5v-.5h2.3v-.3h-2.3c0-.2 0-.4.1-.5.4-3 2.9-5 5.8-5zm3.4 7H71v.3c-.5 2.8-2.9 4.8-5.7 4.7-2.9.1-5.5-2-6-4.9 0-.2 0-.3-.1-.5h2.5c0 .2.1.4.1.5.4 1.6 1.9 2.6 3.5 2.6 1.5.1 2.9-1 3.2-2.5l.1-.2zM29.1 22.5V22h3.4v2.5h-3.1c0-.3-.1-.5-.1-.8h-8.8c0 .6.1 1.3.3 1.9C23 37.3 34.3 45 46 42.8c8.7-1.6 15.6-8.5 17.2-17.2.1-.6.2-1.3.3-1.9h-8.8c0 .3-.1.5-.1.8h-3.2V22h3.5v.6h8.7v-1.9h-8.7v.4H54v-2.3c.1.1.3.2.4.3 0 .2.1.3.1.5h8.7c0-.6 0-1.3-.1-1.9C61 6 49.8-1.8 38 .3 29.2 2 22.3 8.9 20.7 17.7c-.1.6-.2 1.3-.3 1.9h8.8c0-.2.1-.4.1-.5.2-.1.3-.2.5-.3V21h-.7v-.4h-8.7v1.8h8.7v.1zm2.2-1.4H30v-2.4c.5-.3.9-.7 1.3-1.1v3.5zm1.2 0h-.9v-3.8c.4-.4.7-.8.9-1.3v5.1zm6.2 13.4c-4.1-1.1-7.4-4.2-8.7-8.2h24c-2.2 6.3-8.8 10-15.3 8.2zm-4.5-10.1V22h15.4v2.5H34.2v-.1zm0-3.3V16c.3.5.6 1 1 1.4v3.8l-1-.1zm1.2 0v-3.5c.5.5 1 .9 1.6 1.2v2.4h-1.6v-.1zm1.9 0v-2.2c.5.2 1.1.4 1.6.6v1.7h-1.6v-.1zm1.9 0v-1.6c.5.1 1.1.2 1.6.3v1.3h-1.6zm1.8 0v-1.3c.3 0 .6.1.8 0h.8v1.3H41zm1.9 0v-1.3c.5-.1 1.1-.1 1.6-.2v1.6h-1.6v-.1zm1.9 0v-1.6c.6-.1 1.1-.3 1.6-.6v2.2h-1.6zm1.8 0v-2.3c.6-.3 1.2-.6 1.6-1.1v3.4h-1.6zm1.9 0v-3.7c.4-.4.8-.9 1.1-1.4v5.1h-1.1zm3.7 0h-1V16c.3.5.6 1 1 1.4v3.7zm1.6 0h-1.3v-3.5c.4.4.8.8 1.3 1.1v2.4zm-24.4-2.6c.1-.3.1-.5.2-.8 1.8-6.8 8.7-10.9 15.5-9.1 4.5 1.2 8 4.7 9.1 9.1.1.3.2.6.2 1-1.4-.8-2.6-2.1-3.1-3.7h-1.7c-1.1 2.9-4.1 4.5-7.7 4.5S35.3 18 34.2 15h-1.7c-.6 1.4-1.7 2.7-3.1 3.5z"/>
+        </svg>
       </a>
 
-      <!-- Social Media Link -->
-      <section class="nav-social">
-
-        <!-- Icon -->
-        <a href="#">
-          <img src="img/icon/icn-facebook@3x-8.png" alt="Facebook Icon">
-        </a>
-
-        <!-- Icon -->
-        <a href="#">
-          <img src="img/icon/icn-instagram@3x-8.png" alt="Instagram Icon">
-        </a>
-
-        <!-- Icon -->
-        <a href="#">
-          <img src="img/icon/icn-linkedin@3x-8.png" alt="LinkedIn Icon">
-        </a>
-
-      </section>
-
-      <!-- Footer Contact Info -->
+      <!-- Contact Info -->
       <section class="contact-info">
         <p>
           <span class="text-bold">Contact us now</span><br>
-          <span class="text-bold">We’ll do our best to assist</span><br>Tell: 0901 123 456<br> Email: <a href="mailto:hi@pontech.com">hi@pontech.vn</a>
+          <span class="text-bold">We’ll do our best to assist</span><br> Tell: <a href="tel:+84912649963">+84912649963</a><br> Email: <a href="mailto:hi@pontech.com">hi@pontech.vn</a>
         </p>
       </section>
 
@@ -419,14 +649,14 @@
     </section>
 
   </footer>
-  <!-- JQuery -->
-  <script src="jquery/jquery-3.3.1.min.js"></script>
-  <!-- Sticky JQuery -->
-  <script src="jquery/sticky/jquery.sticky.js"></script>
-  <!-- JQuery Overlay Menu -->
-  <script src="jquery/overlay-menu/overlay.js"></script>
-  <!-- JQuery Slick Slideshow-->
-  <script src="jquery/slick/slick.js"></script>
+  <!-- JQerry -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Overlay Menu -->
+  <script src="plugin/overlay-menu/overlay.js"></script>
+  <!-- Scrollify -->
+  <script src="plugin/scrollify/jquery.scrollify.js"></script>
+  <!-- Slick JS -->
+  <script src="plugin/slick/slick.min.js"></script>
   <!-- Main JS File -->
   <script src="js/app.js"></script>
 </body>
