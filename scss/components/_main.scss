@@ -35,6 +35,7 @@ main.service {
 main.homepage {
   h3 {
     text-align: center;
+    font-size: 2rem;
   }
   #homepage-mobile-1 {
     .content-text {height: 100vh}
@@ -46,13 +47,13 @@ main.homepage {
 
 main.service {
 
-  .content-text {height: 60vh}
-  .content-img {height: 40vh}
+  .content-text {height: 30vh}
+  .content-img {height: 70vh}
 
-  // #concept-design {
-  //   .content-text {height: 65vh}
-  //   .content-img {height: 50vh}
-  // }
+  #concept-design {
+    .content-text {height: 40vh}
+    .content-img {height: 60vh}
+  }
   //
   // #structure-design {
   //   .content-text {height: 65vh}
@@ -76,7 +77,7 @@ main.service {
 
 }
 
-main.service #content-text-desktop {
+main.service .text-desktop {
   display: none;
 }
 
@@ -109,6 +110,10 @@ main.career {
 }
 
 @media(min-width: $breakpoint) {
+
+  main.homepage h3 {
+    font-size: 1.17rem;
+  }
 
   main.homepage,
   main.service {
@@ -225,8 +230,8 @@ main.service {
   #construction-design .content-img {
     background: $gradient-20,
     url("../img/bg/services/bg-construction-design.png");
-    background-size: cover, 100vw;
-    background-position: center center, top 120% center;
+    background-size: cover, 150vw;
+    background-position: center center, center bottom ;
     background-repeat: no-repeat;
   }
 
@@ -248,8 +253,8 @@ main.service {
   #design-review .content-img {
     background: $gradient-20,
     url("../img/bg/services/bg-design-review.png");
-    background-size: cover, 90vw;
-    background-position: center center, top center;
+    background-size: cover, 150vw;
+    background-position: center center, center top;
     background-repeat: no-repeat;
   }
 
@@ -263,12 +268,12 @@ main.service {
 
 @media (min-width: $breakpoint) {
 
-  main.service #content-text-mobile {
-    display: none;
+  main.service .text-desktop {
+    display: block;
   }
 
-  main.service #content-text-desktop {
-    display: flex;
+  main.service .text-mobile {
+    display: none;
   }
 
   main.service {

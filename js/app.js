@@ -10,15 +10,8 @@ $(document).ready(function(){
     $.scrollify({
       section: ".content-block",
       interstitialSection : "header, footer",
-      standardScrollElements: ".service"
     });
   });
-
-  if($(window).width() <= 768) {
-    $.scrollify.setOptions({
-      standardScrollElements: ".service-block",
-    })
-  };
 
   // Civil Engineer Modal Box
   $("#open-civil-engineer-mobile").click(function() {
